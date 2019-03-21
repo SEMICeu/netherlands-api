@@ -1,0 +1,10 @@
+// io.swagger.model.Report
+
+// Message for io.swagger.model.Report
+message Report {
+  repeated int32 violations = 1;
+  repeated int32 warnings = 2;
+  repeated int32 info = 3;
+  repeated string dates = 4;
+}
+

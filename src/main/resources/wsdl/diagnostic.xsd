@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Search Web Services searchRetrieve Version 1.0
+    OASIS Committee Specification Draft 01
+    08 December 2011
+    Source: http://docs.oasis-open.org/search-ws/searchRetrieve/v1.0/csd01/schemas/
+    Copyright (c) OASIS Open 2011.  All Rights Reserved.
+-->
+
+<!--  
+Editor: Ray Denenberg, Library of Congress.  rden@loc.gov 
+***** 
+-->
+<xs:schema 
+xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+xmlns="http://docs.oasis-open.org/ns/search-ws/diagnostic"
+targetNamespace="http://docs.oasis-open.org/ns/search-ws/diagnostic"
+ elementFormDefault="qualified"
+  attributeFormDefault="unqualified">
+	<!--  
+*********** Root element declaration
+-->	
+	<xs:element name="diagnostic" type="diagnosticComplexType"/>
+	
+		<!--  
+  
+**************** Type Definition: diagnosticComplexType
+-->
+	<xs:complexType name="diagnosticComplexType">
+		<xs:sequence>
+			<xs:element ref="uri"/>
+			<xs:element ref="details" minOccurs="0"/>
+			<xs:element ref="message" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+		<!--  
+  
+**************** Element Declarations
+-->
+	<xs:element name="details" type="xs:string"/>
+	<xs:element name="message" type="xs:string"/>
+	<xs:element name="uri" type="xs:anyURI"/>
+<!-- -->
+</xs:schema>
