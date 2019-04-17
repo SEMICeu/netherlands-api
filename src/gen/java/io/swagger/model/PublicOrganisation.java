@@ -1,11 +1,10 @@
 package io.swagger.model;
 
-import io.swagger.model.Rule;
-import java.util.ArrayList;
-import java.util.List;
 import javax.validation.constraints.*;
 
 import io.swagger.annotations.ApiModelProperty;
+import ioinformarics.oss.jackson.module.jsonld.annotation.JsonldType;
+
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlAccessType;
@@ -15,30 +14,26 @@ import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class ListOfRules  {
+@JsonldType("http://data.europa.eu/m8g/PublicOrganisation")
+public class PublicOrganisation  {
   
   @ApiModelProperty(value = "")
-  private List<Rule> violations = null;
+  private String name = null;
  /**
-   * Get violations
-   * @return violations
+   * Get name
+   * @return name
   **/
-  @JsonProperty("violations")
-  public List<Rule> getViolations() {
-    return violations;
+  @JsonProperty("name")
+  public String getName() {
+    return name;
   }
 
-  public void setViolations(List<Rule> violations) {
-    this.violations = violations;
+  public void setName(String name) {
+    this.name = name;
   }
 
-  public ListOfRules violations(List<Rule> violations) {
-    this.violations = violations;
-    return this;
-  }
-
-  public ListOfRules addViolationsItem(Rule violationsItem) {
-    this.violations.add(violationsItem);
+  public PublicOrganisation name(String name) {
+    this.name = name;
     return this;
   }
 
@@ -46,9 +41,9 @@ public class ListOfRules  {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class ListOfRules {\n");
+    sb.append("class PublicOrganisation {\n");
     
-    sb.append("    violations: ").append(toIndentedString(violations)).append("\n");
+    sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("}");
     return sb.toString();
   }

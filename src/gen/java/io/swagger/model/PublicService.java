@@ -1,5 +1,9 @@
 package io.swagger.model;
 
+import io.swagger.model.PublicOrganisation;
+import ioinformarics.oss.jackson.module.jsonld.annotation.JsonldRemoteContext;
+import ioinformarics.oss.jackson.module.jsonld.annotation.JsonldType;
+
 import javax.validation.constraints.*;
 
 import io.swagger.annotations.ApiModelProperty;
@@ -12,28 +16,29 @@ import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Rule  {
+@JsonldType("http://purl.org/vocab/cpsv#PublicService")
+public class PublicService  {
   
   @ApiModelProperty(value = "")
-  private Integer value = null;
+  private PublicOrganisation hasCompetentAuthority = null;
 
   @ApiModelProperty(value = "")
   private String name = null;
  /**
-   * Get value
-   * @return value
+   * Get hasCompetentAuthority
+   * @return hasCompetentAuthority
   **/
-  @JsonProperty("value")
-  public Integer getValue() {
-    return value;
+  @JsonProperty("hasCompetentAuthority")
+  public PublicOrganisation getHasCompetentAuthority() {
+    return hasCompetentAuthority;
   }
 
-  public void setValue(Integer value) {
-    this.value = value;
+  public void setHasCompetentAuthority(PublicOrganisation hasCompetentAuthority) {
+    this.hasCompetentAuthority = hasCompetentAuthority;
   }
 
-  public Rule value(Integer value) {
-    this.value = value;
+  public PublicService hasCompetentAuthority(PublicOrganisation hasCompetentAuthority) {
+    this.hasCompetentAuthority = hasCompetentAuthority;
     return this;
   }
 
@@ -50,7 +55,7 @@ public class Rule  {
     this.name = name;
   }
 
-  public Rule name(String name) {
+  public PublicService name(String name) {
     this.name = name;
     return this;
   }
@@ -59,9 +64,9 @@ public class Rule  {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class Rule {\n");
+    sb.append("class PublicService {\n");
     
-    sb.append("    value: ").append(toIndentedString(value)).append("\n");
+    sb.append("    hasCompetentAuthority: ").append(toIndentedString(hasCompetentAuthority)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("}");
     return sb.toString();

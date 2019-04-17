@@ -1,0 +1,16 @@
+// io.swagger.model.ListOfPublicServices
+
+// Message for io.swagger.model.ListOfPublicServices
+message ListOfPublicServices {
+  repeated PublicService publicServicesList = 1;
+}
+// Message for io.swagger.model.PublicService
+message PublicService {
+  optional PublicOrganisation hasCompetentAuthority = 1;
+  optional string name = 2;
+}
+// Message for io.swagger.model.PublicOrganisation
+message PublicOrganisation {
+  optional string name = 1;
+}
+

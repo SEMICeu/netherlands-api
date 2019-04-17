@@ -1,0 +1,105 @@
+swagger: "2.0"
+info:
+ description: "Samenwerkende Catalogi CPSV-AP API"
+ version: "1.0.0"
+ title: "Samenwerkende Catalogi CPSV-AP API"
+ termsOfService: "EUPL"
+ contact:
+   email: "Marco.Aarts@ictu.nl"
+ license:
+   name: "EUPL"
+   url: "https://joinup.ec.europa.eu/collection/eupl/eupl-text-11-12"
+host: "localhost:8080"
+basePath: "/api"
+tags:
+- name: "api"
+  description: "Samenwerkende Catalogi CPSV-AP API"
+  externalDocs:
+   description: "Find out more"
+   url: "https://www.logius.nl/diensten/samenwerkende-catalogi/documentatie"
+schemes:
+- "http"
+paths:
+ /PublicServices:
+   get:
+     tags:
+     - "api"
+     summary: "Get list of Public services"
+     description: "Get a list of Public services"
+     operationId: "GetPublicServices"
+     produces:
+     - "application/json"
+     - "application/xml"
+     - "application/ld+json"
+     - "application/x-jackson-smile"
+     - "avro/binary"    
+     - "application/cbor"
+     - "application/protobuf"
+     - "application/ion"
+     - "application/msgpack"
+     - "application/bson"
+     parameters:
+     - name: "startRecord"
+       in: "query"
+       description: "start Record"
+       required: true
+       type: "string"
+       default: "1"
+     - name: "maximumRecords"
+       in: "query"
+       description: "maximum Record"
+       required: true
+       type: "string"
+       default: "10"
+     - name: "query"
+       in: "query"
+       description: "query"
+       required: true
+       type: "string"
+     responses:
+       200:
+         description: "successful operation"
+         schema:
+           $ref: "#/definitions/ListOfPublicServices" 
+       400:
+         description: "Invalid status value"
+ 
+definitions:
+
+ 
+ ListOfPublicServices:
+   type: "object"
+   properties:
+     publicServicesList:
+       type: "array"
+       items:
+         $ref: "#/definitions/PublicService"
+       xml:
+         name: "Public Service"
+         wrapped: true
+   xml:
+     name: "ListOfPublicServices"
+
+ PublicService:
+   type: "object"
+   properties:
+     hasCompetentAuthority:
+       $ref: "#/definitions/PublicOrganisation"
+     name: 
+       type: "string"
+       xml:
+         name: "name"
+   xml:
+     name: "PublicService"
+ PublicOrganisation:
+   type: "object"
+   properties:
+     name: 
+       type: "string"
+       xml:
+         name: "name"
+   xml:
+     name: "PublicService"
+externalDocs:
+ description: "Find out more about Swagger"
+ url: "http://swagger.io"

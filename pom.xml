@@ -4,11 +4,11 @@
   <artifactId>swagger-cxf-server</artifactId>
   <packaging>war</packaging>
   <name>swagger-cxf-server</name>
-  <description>Dashboard API.</description>
+  <description>Netherlands API.</description>
   <version>1.0.0</version>
   <properties>
   	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  	<swagger.input>${project.basedir}/src/main/resources/dashboardapi.yaml</swagger.input>
+  	<swagger.input>${project.basedir}/src/main/resources/netherlandsapi.yaml</swagger.input>
   	<java.version>1.8</java.version>
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
@@ -154,7 +154,7 @@
             <configuration>
                <mainClass>io.swagger.api.ProtoGenerator</mainClass>
                <arguments>
-                   <argument>io.swagger.model.Report</argument>
+                   <argument>io.swagger.model.ListOfPublicServices</argument>
                    <argument>src/main/resources/</argument>
                </arguments>
            </configuration>

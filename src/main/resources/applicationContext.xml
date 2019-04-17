@@ -22,11 +22,11 @@
   <bean id="jacksonXmlProvider" class="com.fasterxml.jackson.jaxrs.xml.JacksonJaxbXMLProvider"/>
   <bean id="jsonldProvider" class="io.swagger.api.JsonldProvider"/>
   <bean id="avroProvider" class="io.swagger.api.AvroProvider">
-  	<constructor-arg value="io.swagger.model.Report"/>
+  	<constructor-arg value="io.swagger.model.ListOfPublicServices"/>
   </bean>
   <bean id="cborProvider" class="io.swagger.api.CborProvider"/>  
   <bean id="protobufProvider" class="io.swagger.api.ProtobufProvider">
-   	<constructor-arg value="io.swagger.model.Report"/>
+   	<constructor-arg value="io.swagger.model.ListOfPublicServices"/>
   </bean>  
   <bean id="ionProvider" class="io.swagger.api.IonProvider"/> 
   <bean id="msgPackProvider" class="io.swagger.api.MsgPackProvider"/>    
