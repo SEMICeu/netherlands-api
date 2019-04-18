@@ -90,26 +90,23 @@ public class SruService {
 			
 			Owmskern publicService = scProduct.getMeta().getOwmskern();
 			System.out.println("Identifier: "+publicService.getIdentifier());
-			System.out.println("Title: "+publicService.getTitle());
+			System.out.println("Title: "+publicService.getTitle().getValue());
 			System.out.println("Language: "+publicService.getLanguage());
 			System.out.println("Modified: "+publicService.getModified());
-			System.out.println("Spatial: "+publicService.getSpatial());
-			System.out.println("Competent Authority: "+publicService.getAuthority());
+			System.out.println("Spatial: "+publicService.getSpatial().get(0).getResourceIdentifier());
+			System.out.println("Competent Authority: "+publicService.getAuthority().get(0).getResourceIdentifier());
 			
 			// Get the SC-specifieke metadata
-			Object scmeta = gzdData.getOriginalData().getAny().get(2);
-			JAXBContext jc4 = JAXBContext.newInstance(Scmeta.class);
-			Scproduct scMeta = ((Scproduct) jc4.createUnmarshaller().unmarshal((Node) scmeta));
+			Scmeta scmeta = scProduct.getMeta().getScmeta();
 						
-			Scmeta type = scMeta.getMeta().getScmeta();
-			List<UniformeProductnaam> listOfTypes = type.getUniformeProductnaam();
+			List<UniformeProductnaam> listOfTypes = scmeta.getUniformeProductnaam();
 			for (int i = 0; i < listOfTypes.size(); i++) {
-			    System.out.println("Type: "+ listOfTypes.get(i));
+			    System.out.println("Type: "+ listOfTypes.get(i).getResourceIdentifier());
 			}
 						
 			// Get the ProductHTML	
 			ProductHTML HTMLDescription = scProduct.getBody().getProductHTML();
-			System.out.println("HTML Description: "+ HTMLDescription.toString());
+			System.out.println("HTML Description: "+ HTMLDescription.getContent().get(0).toString());
 
 			// Get the Enriched Data
 			//GzdDataComplexType gzdData = new test.ObjectFactory().createGzd((GzdDataComplexType) record).getValue();
