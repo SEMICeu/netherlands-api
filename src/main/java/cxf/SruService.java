@@ -9,6 +9,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.util.List;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBElement;
@@ -21,7 +22,12 @@ import gov.loc.zing.srw.RecordDefinition;
 import gov.loc.zing.srw.RecordsDefinition;
 import gov.loc.zing.srw.SearchRetrieveResponseDefinition;
 import gov.loc.zing.srw.StringOrXmlFragmentDefinition;
+import io.swagger.model.PublicService;
+import nl.overheid.standaarden.product.terms.Body.ProductHTML;
+import nl.overheid.standaarden.product.terms.Meta.Owmskern;
+import nl.overheid.standaarden.product.terms.Meta.Scmeta;
 import nl.overheid.standaarden.product.terms.Scproduct;
+import nl.overheid.standaarden.product.terms.UniformeProductnaam;
 import test.GzdDataComplexType;
 
 public class SruService {
@@ -64,27 +70,53 @@ public class SruService {
 			System.out.println(url);
 			connection.setRequestProperty("Accept-Charset", charset);
 			
+			// Get the number of Records
 			JAXBContext jc = JAXBContext.newInstance(ObjectFactory.class);
 			InputStream xml = connection.getInputStream();
 			SearchRetrieveResponseDefinition response = ((JAXBElement<SearchRetrieveResponseDefinition>) jc.createUnmarshaller().unmarshal(xml)).getValue();
-			System.out.println(response.getNumberOfRecords().toString());
+			// System.out.println(response.getNumberOfRecords().toString());
 			RecordsDefinition records = response.getRecords();
 		    Object record = records.getRecord().get(0).getRecordData().getContent().get(1);
-			System.out.println("test"+record.toString());
+			// System.out.println("test"+record.toString());
 			
-			//GzdDataComplexType gzdData = new test.ObjectFactory().createGzd((GzdDataComplexType) record).getValue();
-			JAXBContext jc2 = JAXBContext.newInstance(GzdDataComplexType.class);
+		    
+			// Get the OWMS kern
+		    JAXBContext jc2 = JAXBContext.newInstance(GzdDataComplexType.class);
 			GzdDataComplexType gzdData= ((JAXBElement<GzdDataComplexType>) jc2.createUnmarshaller().unmarshal((Node) record)).getValue();
-			Object auth = gzdData.getEnrichedData().getAny().get(0);
-			System.out.println("size"+((Node)auth).getTextContent());
-			
+		   
 			Object scproduct = gzdData.getOriginalData().getAny().get(0);
 			JAXBContext jc3 = JAXBContext.newInstance(Scproduct.class);
 			Scproduct scProduct = ((Scproduct) jc3.createUnmarshaller().unmarshal((Node) scproduct));
 			
-			System.out.println("identifier"+scProduct.getMeta().getOwmskern().getIdentifier());
+			Owmskern publicService = scProduct.getMeta().getOwmskern();
+			System.out.println("Identifier: "+publicService.getIdentifier());
+			System.out.println("Title: "+publicService.getTitle());
+			System.out.println("Language: "+publicService.getLanguage());
+			System.out.println("Modified: "+publicService.getModified());
+			System.out.println("Spatial: "+publicService.getSpatial());
+			System.out.println("Competent Authority: "+publicService.getAuthority());
 			
-			
+			// Get the SC-specifieke metadata
+			Object scmeta = gzdData.getOriginalData().getAny().get(2);
+			JAXBContext jc4 = JAXBContext.newInstance(Scmeta.class);
+			Scproduct scMeta = ((Scproduct) jc4.createUnmarshaller().unmarshal((Node) scmeta));
+						
+			Scmeta type = scMeta.getMeta().getScmeta();
+			List<UniformeProductnaam> listOfTypes = type.getUniformeProductnaam();
+			for (int i = 0; i < listOfTypes.size(); i++) {
+			    System.out.println("Type: "+ listOfTypes.get(i));
+			}
+						
+			// Get the ProductHTML	
+			ProductHTML HTMLDescription = scProduct.getBody().getProductHTML();
+			System.out.println("HTML Description: "+ HTMLDescription.toString());
+
+			// Get the Enriched Data
+			//GzdDataComplexType gzdData = new test.ObjectFactory().createGzd((GzdDataComplexType) record).getValue();
+			Object auth1 = gzdData.getEnrichedData().getAny().get(1);
+			Object auth2 = gzdData.getEnrichedData().getAny().get(3);
+			System.out.println("AuthorityURI: "+((Node)auth1).getTextContent());
+			System.out.println("SpatialURI: "+((Node)auth2).getTextContent());
 			
 		} catch (MalformedURLException e1) {
 			// TODO Auto-generated catch block
