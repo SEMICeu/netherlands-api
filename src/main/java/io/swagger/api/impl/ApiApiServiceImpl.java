@@ -32,15 +32,14 @@ public class ApiApiServiceImpl implements ApiApi {
      *
      */
     public ListOfPublicServices getPublicServices(String startRecord, String maximumRecords, String query) {
-        // TODO: Implement...
     	
     	ListOfPublicServices publicServices = new ListOfPublicServices();
     	
     	List<PublicService> publicServicesList = new ArrayList<PublicService>();
     	PublicService arg0 = new PublicService();
-    	arg0.setName("Groenland");
+    	arg0.setTitle("Groenland");
 		publicServicesList.add(arg0);
-		publicServices.setPublicServicesList(publicServicesList);
+		publicServices.setHasPublicService(publicServicesList);
         
         return publicServices;
     }

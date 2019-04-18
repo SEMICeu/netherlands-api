@@ -18,22 +18,22 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class PublicOrganisation  {
   
   @ApiModelProperty(value = "")
-  private String name = null;
+  private String title = null;
  /**
-   * Get name
-   * @return name
+   * Get title
+   * @return title
   **/
-  @JsonProperty("name")
-  public String getName() {
-    return name;
+  @JsonProperty("title")
+  public String getTitle() {
+    return title;
   }
 
-  public void setName(String name) {
-    this.name = name;
+  public void setTitle(String title) {
+    this.title = title;
   }
 
-  public PublicOrganisation name(String name) {
-    this.name = name;
+  public PublicOrganisation title(String title) {
+    this.title = title;
     return this;
   }
 
@@ -43,7 +43,7 @@ public class PublicOrganisation  {
     StringBuilder sb = new StringBuilder();
     sb.append("class PublicOrganisation {\n");
     
-    sb.append("    name: ").append(toIndentedString(name)).append("\n");
+    sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("}");
     return sb.toString();
   }

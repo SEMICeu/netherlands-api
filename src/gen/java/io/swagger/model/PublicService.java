@@ -1,7 +1,6 @@
 package io.swagger.model;
 
 import io.swagger.model.PublicOrganisation;
-import ioinformarics.oss.jackson.module.jsonld.annotation.JsonldRemoteContext;
 import ioinformarics.oss.jackson.module.jsonld.annotation.JsonldType;
 
 import javax.validation.constraints.*;
@@ -23,7 +22,7 @@ public class PublicService  {
   private PublicOrganisation hasCompetentAuthority = null;
 
   @ApiModelProperty(value = "")
-  private String name = null;
+  private String title = null;
  /**
    * Get hasCompetentAuthority
    * @return hasCompetentAuthority
@@ -43,20 +42,20 @@ public class PublicService  {
   }
 
  /**
-   * Get name
-   * @return name
+   * Get title
+   * @return title
   **/
-  @JsonProperty("name")
-  public String getName() {
-    return name;
+  @JsonProperty("title")
+  public String getTitle() {
+    return title;
   }
 
-  public void setName(String name) {
-    this.name = name;
+  public void setTitle(String title) {
+    this.title = title;
   }
 
-  public PublicService name(String name) {
-    this.name = name;
+  public PublicService title(String title) {
+    this.title = title;
     return this;
   }
 
@@ -67,7 +66,7 @@ public class PublicService  {
     sb.append("class PublicService {\n");
     
     sb.append("    hasCompetentAuthority: ").append(toIndentedString(hasCompetentAuthority)).append("\n");
-    sb.append("    name: ").append(toIndentedString(name)).append("\n");
+    sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("}");
     return sb.toString();
   }

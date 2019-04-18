@@ -43,8 +43,8 @@ public class SearchClauseDefinition {
 
     @XmlElementRefs({
         @XmlElementRef(name = "index", namespace = "http://docs.oasis-open.org/ns/search-ws/xcql", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "term", namespace = "http://docs.oasis-open.org/ns/search-ws/xcql", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "relation", namespace = "http://docs.oasis-open.org/ns/search-ws/xcql", type = JAXBElement.class, required = false)
+        @XmlElementRef(name = "relation", namespace = "http://docs.oasis-open.org/ns/search-ws/xcql", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "term", namespace = "http://docs.oasis-open.org/ns/search-ws/xcql", type = JAXBElement.class, required = false)
     })
     protected List<JAXBElement<?>> content;
 
@@ -77,8 +77,8 @@ public class SearchClauseDefinition {
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link JAXBElement }{@code <}{@link String }{@code >}
-     * {@link JAXBElement }{@code <}{@link String }{@code >}
      * {@link JAXBElement }{@code <}{@link ValuePlusModifier }{@code >}
+     * {@link JAXBElement }{@code <}{@link String }{@code >}
      * 
      * 
      */

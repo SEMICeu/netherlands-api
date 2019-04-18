@@ -20,33 +20,32 @@ import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-
 @JsonldRemoteContext(value="https://raw.githubusercontent.com/catalogue-of-services-isa/netherlands-api/master/src/main/resources/CPSV-AP_v2.2.1.jsonld")
 @JsonldType("http://data.europa.eu/m8g/PublicServiceDataset")
 public class ListOfPublicServices implements GenericReport {
-
+  
   @ApiModelProperty(value = "")
-  private List<PublicService> publicServicesList = null;
+  private List<PublicService> hasPublicService = null;
  /**
-   * Get publicServicesList
-   * @return publicServicesList
+   * Get hasPublicService
+   * @return hasPublicService
   **/
-  @JsonProperty("publicServicesList")
-  public List<PublicService> getPublicServicesList() {
-    return publicServicesList;
+  @JsonProperty("hasPublicService")
+  public List<PublicService> getHasPublicService() {
+    return hasPublicService;
   }
 
-  public void setPublicServicesList(List<PublicService> publicServicesList) {
-    this.publicServicesList = publicServicesList;
+  public void setHasPublicService(List<PublicService> hasPublicService) {
+    this.hasPublicService = hasPublicService;
   }
 
-  public ListOfPublicServices publicServicesList(List<PublicService> publicServicesList) {
-    this.publicServicesList = publicServicesList;
+  public ListOfPublicServices hasPublicService(List<PublicService> hasPublicService) {
+    this.hasPublicService = hasPublicService;
     return this;
   }
 
-  public ListOfPublicServices addPublicServicesListItem(PublicService publicServicesListItem) {
-    this.publicServicesList.add(publicServicesListItem);
+  public ListOfPublicServices addHasPublicServiceItem(PublicService hasPublicServiceItem) {
+    this.hasPublicService.add(hasPublicServiceItem);
     return this;
   }
 
@@ -56,7 +55,7 @@ public class ListOfPublicServices implements GenericReport {
     StringBuilder sb = new StringBuilder();
     sb.append("class ListOfPublicServices {\n");
     
-    sb.append("    publicServicesList: ").append(toIndentedString(publicServicesList)).append("\n");
+    sb.append("    hasPublicService: ").append(toIndentedString(hasPublicService)).append("\n");
     sb.append("}");
     return sb.toString();
   }
