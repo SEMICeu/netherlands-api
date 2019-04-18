@@ -42,9 +42,9 @@ import javax.xml.bind.annotation.XmlType;
 public class SearchClauseDefinition {
 
     @XmlElementRefs({
-        @XmlElementRef(name = "relation", namespace = "http://docs.oasis-open.org/ns/search-ws/xcql", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "index", namespace = "http://docs.oasis-open.org/ns/search-ws/xcql", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "term", namespace = "http://docs.oasis-open.org/ns/search-ws/xcql", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "index", namespace = "http://docs.oasis-open.org/ns/search-ws/xcql", type = JAXBElement.class, required = false)
+        @XmlElementRef(name = "relation", namespace = "http://docs.oasis-open.org/ns/search-ws/xcql", type = JAXBElement.class, required = false)
     })
     protected List<JAXBElement<?>> content;
 

@@ -9,6 +9,8 @@ import java.util.List;
 import javax.validation.constraints.*;
 
 import io.swagger.annotations.ApiModelProperty;
+import io.swagger.api.GenericReport;
+
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlAccessType;
@@ -19,9 +21,9 @@ import javax.xml.bind.annotation.XmlEnumValue;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 
-@JsonldRemoteContext(value="https://raw.githubusercontent.com/catalogue-of-services-isa/CPSV-AP/master/releases/2.2.1/CPSV-AP_v2.2.1.jsonld")
-@JsonldType("http://www.w3.org/ns/dcat#Dataset")
-public class ListOfPublicServices  {
+@JsonldRemoteContext(value="https://raw.githubusercontent.com/catalogue-of-services-isa/netherlands-api/master/src/main/resources/CPSV-AP_v2.2.1.jsonld")
+@JsonldType("http://data.europa.eu/m8g/PublicServiceDataset")
+public class ListOfPublicServices implements GenericReport {
 
   @ApiModelProperty(value = "")
   private List<PublicService> publicServicesList = null;

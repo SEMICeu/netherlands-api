@@ -70,7 +70,7 @@ definitions:
  ListOfPublicServices:
    type: "object"
    properties:
-     publicServicesList:
+     hasPublicService:
        type: "array"
        items:
          $ref: "#/definitions/PublicService"
@@ -85,7 +85,7 @@ definitions:
    properties:
      hasCompetentAuthority:
        $ref: "#/definitions/PublicOrganisation"
-     name: 
+     title: 
        type: "string"
        xml:
          name: "name"
@@ -94,7 +94,7 @@ definitions:
  PublicOrganisation:
    type: "object"
    properties:
-     name: 
+     title: 
        type: "string"
        xml:
          name: "name"
