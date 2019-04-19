@@ -25,7 +25,7 @@
 
 package io.swagger.api;
 
-import io.swagger.model.ListOfPublicServices;
+import io.swagger.model.PublicServiceDataset;
 import org.junit.Test;
 import org.junit.Before;
 import static org.junit.Assert.*;
@@ -66,9 +66,9 @@ public class ApiApiTest {
         JacksonJsonProvider jsonProvider = new JacksonJsonProvider();
         JacksonJaxbXMLProvider xmlProvider =new JacksonJaxbXMLProvider();
         JsonldProvider jsonldProvider = new JsonldProvider();
-        AvroProvider avroProvider = new AvroProvider("io.swagger.model.ListOfPublicServices");
+        AvroProvider avroProvider = new AvroProvider("io.swagger.model.PublicServiceDataset");
         CborProvider cborProvider = new CborProvider();
-        ProtobufProvider protobufProvider = new ProtobufProvider("io.swagger.model.ListOfPublicServices");
+        ProtobufProvider protobufProvider = new ProtobufProvider("io.swagger.model.PublicServiceDataset");
         IonProvider ionProvider = new IonProvider();
         MsgPackProvider msgPackProvider = new MsgPackProvider();
         BsonProvider bsonProvider = new BsonProvider();
@@ -115,7 +115,7 @@ public class ApiApiTest {
         long now = System.currentTimeMillis();
         Timestamp ts = new Timestamp(now);
         System.out.println("Start time:" + ts);
-        ListOfPublicServices response = api.getPublicServices("1","10","test");
+        PublicServiceDataset response = api.getPublicServices("1","10","test");
         //assertNotNull(response);
         // TODO: test validations
         long after = System.currentTimeMillis();

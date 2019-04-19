@@ -21,12 +21,9 @@
   <bean id="jsonProvider" class="com.fasterxml.jackson.jaxrs.json.JacksonJaxbJsonProvider" />
   <bean id="jacksonXmlProvider" class="com.fasterxml.jackson.jaxrs.xml.JacksonJaxbXMLProvider"/>
   <bean id="jsonldProvider" class="io.swagger.api.JsonldProvider"/>
-  <bean id="avroProvider" class="io.swagger.api.AvroProvider">
-  	<constructor-arg value="io.swagger.model.ListOfPublicServices"/>
-  </bean>
   <bean id="cborProvider" class="io.swagger.api.CborProvider"/>  
   <bean id="protobufProvider" class="io.swagger.api.ProtobufProvider">
-   	<constructor-arg value="io.swagger.model.ListOfPublicServices"/>
+   	<constructor-arg value="io.swagger.model.PublicServiceDataset"/>
   </bean>  
   <bean id="ionProvider" class="io.swagger.api.IonProvider"/> 
   <bean id="msgPackProvider" class="io.swagger.api.MsgPackProvider"/>    
@@ -87,7 +84,6 @@
         <ref bean="jacksonXmlProvider" />
         <ref bean="swaggerWriter" />
 		<ref bean="jsonldProvider" />
-        <ref bean="avroProvider" />
         <ref bean="cborProvider" />
         <ref bean="protobufProvider" />  
         <ref bean="ionProvider" />  

@@ -154,7 +154,7 @@
             <configuration>
                <mainClass>io.swagger.api.ProtoGenerator</mainClass>
                <arguments>
-                   <argument>io.swagger.model.ListOfPublicServices</argument>
+                   <argument>io.swagger.model.PublicServiceDataset</argument>
                    <argument>src/main/resources/</argument>
                </arguments>
            </configuration>

@@ -22,7 +22,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 @JsonldRemoteContext(value="https://raw.githubusercontent.com/catalogue-of-services-isa/netherlands-api/master/src/main/resources/CPSV-AP_v2.2.1.jsonld")
 @JsonldType("http://data.europa.eu/m8g/PublicServiceDataset")
-public class ListOfPublicServices implements GenericReport {
+public class PublicServiceDataset implements GenericReport {
   
   @ApiModelProperty(value = "")
   private List<PublicService> hasPublicService = null;
@@ -39,12 +39,12 @@ public class ListOfPublicServices implements GenericReport {
     this.hasPublicService = hasPublicService;
   }
 
-  public ListOfPublicServices hasPublicService(List<PublicService> hasPublicService) {
+  public PublicServiceDataset hasPublicService(List<PublicService> hasPublicService) {
     this.hasPublicService = hasPublicService;
     return this;
   }
 
-  public ListOfPublicServices addHasPublicServiceItem(PublicService hasPublicServiceItem) {
+  public PublicServiceDataset addHasPublicServiceItem(PublicService hasPublicServiceItem) {
     this.hasPublicService.add(hasPublicServiceItem);
     return this;
   }
@@ -53,7 +53,7 @@ public class ListOfPublicServices implements GenericReport {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class ListOfPublicServices {\n");
+    sb.append("class PublicServiceDataset {\n");
     
     sb.append("    hasPublicService: ").append(toIndentedString(hasPublicService)).append("\n");
     sb.append("}");

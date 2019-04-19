@@ -1,12 +1,11 @@
 package io.swagger.model;
 
-import io.swagger.model.Location;
-import ioinformarics.oss.jackson.module.jsonld.annotation.JsonldId;
-import ioinformarics.oss.jackson.module.jsonld.annotation.JsonldType;
-
 import javax.validation.constraints.*;
 
 import io.swagger.annotations.ApiModelProperty;
+import ioinformarics.oss.jackson.module.jsonld.annotation.JsonldId;
+import ioinformarics.oss.jackson.module.jsonld.annotation.JsonldType;
+
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlAccessType;
@@ -16,15 +15,12 @@ import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-@JsonldType("http://data.europa.eu/m8g/PublicOrganisation")
-public class PublicOrganisation  {
+@JsonldType("http://www.w3.org/2004/02/skos/core#Concept")
+public class Concept  {
   
   @JsonldId
   @ApiModelProperty(value = "")
   private String id = null;
-
-  @ApiModelProperty(value = "")
-  private Location spatial = null;
  /**
    * Get id
    * @return id
@@ -38,27 +34,8 @@ public class PublicOrganisation  {
     this.id = id;
   }
 
-  
-  public PublicOrganisation id(String id) {
+  public Concept id(String id) {
     this.id = id;
-    return this;
-  }
-
- /**
-   * Get spatial
-   * @return spatial
-  **/
-  @JsonProperty("spatial")
-  public Location getSpatial() {
-    return spatial;
-  }
-
-  public void setSpatial(Location spatial) {
-    this.spatial = spatial;
-  }
-
-  public PublicOrganisation spatial(Location spatial) {
-    this.spatial = spatial;
     return this;
   }
 
@@ -66,10 +43,9 @@ public class PublicOrganisation  {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class PublicOrganisation {\n");
+    sb.append("class Concept {\n");
     
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
-    sb.append("    spatial: ").append(toIndentedString(spatial)).append("\n");
     sb.append("}");
     return sb.toString();
   }

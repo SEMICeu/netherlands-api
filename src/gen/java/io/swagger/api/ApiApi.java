@@ -1,6 +1,6 @@
 package io.swagger.api;
 
-import io.swagger.model.ListOfPublicServices;
+import io.swagger.model.PublicServiceDataset;
 
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -40,8 +40,8 @@ public interface ApiApi  {
     @Produces({ "application/json", "application/xml", "application/ld+json", "application/x-jackson-smile", "avro/binary", "application/cbor", "application/protobuf", "application/ion", "application/msgpack", "application/bson" })
     @ApiOperation(value = "Get list of Public services", tags={ "api" })
     @ApiResponses(value = { 
-        @ApiResponse(code = 200, message = "successful operation", response = ListOfPublicServices.class),
+        @ApiResponse(code = 200, message = "successful operation", response = PublicServiceDataset.class),
         @ApiResponse(code = 400, message = "Invalid status value") })
-    public ListOfPublicServices getPublicServices(@QueryParam("startRecord") @NotNull @DefaultValue("1") String startRecord, @QueryParam("maximumRecords") @NotNull @DefaultValue("10") String maximumRecords, @QueryParam("query") @NotNull String query);
+    public PublicServiceDataset getPublicServices(@QueryParam("startRecord") @NotNull @DefaultValue("1") String startRecord, @QueryParam("maximumRecords") @NotNull @DefaultValue("10") String maximumRecords, @QueryParam("query") @NotNull String query);
 }
 

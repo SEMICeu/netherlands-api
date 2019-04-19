@@ -60,14 +60,14 @@ paths:
        200:
          description: "successful operation"
          schema:
-           $ref: "#/definitions/ListOfPublicServices" 
+           $ref: "#/definitions/PublicServiceDataset" 
        400:
          description: "Invalid status value"
  
 definitions:
 
  
- ListOfPublicServices:
+ PublicServiceDataset:
    type: "object"
    properties:
      hasPublicService:
@@ -78,28 +78,75 @@ definitions:
          name: "Public Service"
          wrapped: true
    xml:
-     name: "ListOfPublicServices"
+     name: "PublicServiceDataset"
 
  PublicService:
    type: "object"
    properties:
-     hasCompetentAuthority:
-       $ref: "#/definitions/PublicOrganisation"
+     id: 
+       type: "string"
+       xml:
+         name: "id"
      title: 
        type: "string"
        xml:
          name: "name"
+     description: 
+       type: "string"
+       xml:
+         name: "description"
+     type: 
+       $ref: "#/definitions/Concept"
+     language: 
+       $ref: "#/definitions/Language"
+     spatial: 
+       $ref: "#/definitions/Location"
+     modified: 
+       type: "string"
+       xml:
+         name: "modified"
+     hasCompetentAuthority:
+       $ref: "#/definitions/PublicOrganisation"
    xml:
      name: "PublicService"
  PublicOrganisation:
    type: "object"
    properties:
-     title: 
+     id: 
        type: "string"
        xml:
-         name: "name"
+         name: "id"
+     spatial: 
+       $ref: "#/definitions/Location"
    xml:
      name: "PublicService"
+ Location:
+   type: "object"
+   properties:
+     id: 
+       type: "string"
+       xml:
+         name: "id"
+   xml:
+     name: "Location"
+ Concept:
+   type: "object"
+   properties:
+     id: 
+       type: "string"
+       xml:
+         name: "id"
+   xml:
+     name: "Concept"
+ Language:
+   type: "object"
+   properties:
+     id: 
+       type: "string"
+       xml:
+         name: "id"
+   xml:
+     name: "Language"
 externalDocs:
  description: "Find out more about Swagger"
  url: "http://swagger.io"
