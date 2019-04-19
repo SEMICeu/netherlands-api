@@ -75,45 +75,45 @@ public class SruService {
 			InputStream xml = connection.getInputStream();
 			SearchRetrieveResponseDefinition response = ((JAXBElement<SearchRetrieveResponseDefinition>) jc.createUnmarshaller().unmarshal(xml)).getValue();
 			// System.out.println(response.getNumberOfRecords().toString());
-			RecordsDefinition records = response.getRecords();
-		    Object record = records.getRecord().get(0).getRecordData().getContent().get(1);
+//			RecordsDefinition records = response.getRecords();
+//		    Object record = records.getRecord().get(0).getRecordData().getContent().get(1);
 			// System.out.println("test"+record.toString());
 			
 		    
-			// Get the OWMS kern
-		    JAXBContext jc2 = JAXBContext.newInstance(GzdDataComplexType.class);
-			GzdDataComplexType gzdData= ((JAXBElement<GzdDataComplexType>) jc2.createUnmarshaller().unmarshal((Node) record)).getValue();
-		   
-			Object scproduct = gzdData.getOriginalData().getAny().get(0);
-			JAXBContext jc3 = JAXBContext.newInstance(Scproduct.class);
-			Scproduct scProduct = ((Scproduct) jc3.createUnmarshaller().unmarshal((Node) scproduct));
-			
-			Owmskern publicService = scProduct.getMeta().getOwmskern();
-			System.out.println("Identifier: "+publicService.getIdentifier());
-			System.out.println("Title: "+publicService.getTitle().getValue());
-			System.out.println("Language: "+publicService.getLanguage());
-			System.out.println("Modified: "+publicService.getModified());
-			System.out.println("Spatial: "+publicService.getSpatial().get(0).getResourceIdentifier());
-			System.out.println("Competent Authority: "+publicService.getAuthority().get(0).getResourceIdentifier());
-			
-			// Get the SC-specifieke metadata
-			Scmeta scmeta = scProduct.getMeta().getScmeta();
-						
-			List<UniformeProductnaam> listOfTypes = scmeta.getUniformeProductnaam();
-			for (int i = 0; i < listOfTypes.size(); i++) {
-			    System.out.println("Type: "+ listOfTypes.get(i).getResourceIdentifier());
-			}
-						
-			// Get the ProductHTML	
-			ProductHTML HTMLDescription = scProduct.getBody().getProductHTML();
-			System.out.println("HTML Description: "+ HTMLDescription.getContent().get(0).toString());
-
-			// Get the Enriched Data
-			//GzdDataComplexType gzdData = new test.ObjectFactory().createGzd((GzdDataComplexType) record).getValue();
-			Object auth1 = gzdData.getEnrichedData().getAny().get(1);
-			Object auth2 = gzdData.getEnrichedData().getAny().get(3);
-			System.out.println("AuthorityURI: "+((Node)auth1).getTextContent());
-			System.out.println("SpatialURI: "+((Node)auth2).getTextContent());
+//			// Get the OWMS kern
+//		    JAXBContext jc2 = JAXBContext.newInstance(GzdDataComplexType.class);
+//			GzdDataComplexType gzdData= ((JAXBElement<GzdDataComplexType>) jc2.createUnmarshaller().unmarshal((Node) record)).getValue();
+//		   
+//			Object scproduct = gzdData.getOriginalData().getAny().get(0);
+//			JAXBContext jc3 = JAXBContext.newInstance(Scproduct.class);
+//			Scproduct scProduct = ((Scproduct) jc3.createUnmarshaller().unmarshal((Node) scproduct));
+//			
+//			Owmskern publicService = scProduct.getMeta().getOwmskern();
+//			System.out.println("Identifier: "+publicService.getIdentifier());
+//			System.out.println("Title: "+publicService.getTitle().getValue());
+//			System.out.println("Language: "+publicService.getLanguage());
+//			System.out.println("Modified: "+publicService.getModified());
+//			System.out.println("Spatial: "+publicService.getSpatial().get(0).getResourceIdentifier());
+//			System.out.println("Competent Authority: "+publicService.getAuthority().get(0).getResourceIdentifier());
+//			
+//			// Get the SC-specifieke metadata
+//			Scmeta scmeta = scProduct.getMeta().getScmeta();
+//						
+//			List<UniformeProductnaam> listOfTypes = scmeta.getUniformeProductnaam();
+//			for (int i = 0; i < listOfTypes.size(); i++) {
+//			    System.out.println("Type: "+ listOfTypes.get(i).getResourceIdentifier());
+//			}
+//						
+//			// Get the ProductHTML	
+//			ProductHTML HTMLDescription = scProduct.getBody().getProductHTML();
+//			System.out.println("HTML Description: "+ HTMLDescription.getContent().get(0).toString());
+//
+//			// Get the Enriched Data
+//			//GzdDataComplexType gzdData = new test.ObjectFactory().createGzd((GzdDataComplexType) record).getValue();
+//			Object auth1 = gzdData.getEnrichedData().getAny().get(1);
+//			Object auth2 = gzdData.getEnrichedData().getAny().get(3);
+//			System.out.println("AuthorityURI: "+((Node)auth1).getTextContent());
+//			System.out.println("SpatialURI: "+((Node)auth2).getTextContent());
 			
 		} catch (MalformedURLException e1) {
 			// TODO Auto-generated catch block
