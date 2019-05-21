@@ -3,7 +3,6 @@ package io.swagger.model;
 import javax.validation.constraints.*;
 
 import io.swagger.annotations.ApiModelProperty;
-import ioinformarics.oss.jackson.module.jsonld.annotation.JsonldId;
 import ioinformarics.oss.jackson.module.jsonld.annotation.JsonldType;
 
 import javax.xml.bind.annotation.XmlElement;
@@ -18,14 +17,13 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 @JsonldType("http://www.w3.org/2004/02/skos/core#Concept")
 public class Concept  {
   
-  @JsonldId
   @ApiModelProperty(value = "")
   private String id = null;
  /**
    * Get id
    * @return id
   **/
-  @JsonProperty("@id")
+  @JsonProperty("id")
   public String getId() {
     return id;
   }

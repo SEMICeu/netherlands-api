@@ -42,9 +42,9 @@ import javax.xml.bind.annotation.XmlType;
 public class SearchClauseDefinition {
 
     @XmlElementRefs({
-        @XmlElementRef(name = "relation", namespace = "http://docs.oasis-open.org/ns/search-ws/xcql", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "index", namespace = "http://docs.oasis-open.org/ns/search-ws/xcql", type = JAXBElement.class, required = false),
         @XmlElementRef(name = "term", namespace = "http://docs.oasis-open.org/ns/search-ws/xcql", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "index", namespace = "http://docs.oasis-open.org/ns/search-ws/xcql", type = JAXBElement.class, required = false)
+        @XmlElementRef(name = "relation", namespace = "http://docs.oasis-open.org/ns/search-ws/xcql", type = JAXBElement.class, required = false)
     })
     protected List<JAXBElement<?>> content;
 
@@ -54,8 +54,8 @@ public class SearchClauseDefinition {
      * <p>
      * You are getting this "catch-all" property because of the following reason: 
      * The field name "Term" is used by two different parts of a schema. See: 
-     * line 132 of file:/C:/Users/servaism/git/netherlands-api/src/main/resources/wsdl/xcql.xsd
-     * line 128 of file:/C:/Users/servaism/git/netherlands-api/src/main/resources/wsdl/xcql.xsd
+     * line 132 of file:/C:/Users/stanie/git/netherlands-api/src/main/resources/wsdl/xcql.xsd
+     * line 128 of file:/C:/Users/stanie/git/netherlands-api/src/main/resources/wsdl/xcql.xsd
      * <p>
      * To get rid of this property, apply a property customization to one 
      * of both of the following declarations to change their names: 

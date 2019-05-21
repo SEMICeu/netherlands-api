@@ -53,14 +53,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link SearchClauseDefinition }
-     * 
-     */
-    public SearchClauseDefinition createSearchClauseDefinition() {
-        return new SearchClauseDefinition();
-    }
-
-    /**
      * Create an instance of {@link XcqlDefinition }
      * 
      */
@@ -130,6 +122,14 @@ public class ObjectFactory {
      */
     public ValuePlusModifier createValuePlusModifier() {
         return new ValuePlusModifier();
+    }
+
+    /**
+     * Create an instance of {@link SearchClauseDefinition }
+     * 
+     */
+    public SearchClauseDefinition createSearchClauseDefinition() {
+        return new SearchClauseDefinition();
     }
 
     /**

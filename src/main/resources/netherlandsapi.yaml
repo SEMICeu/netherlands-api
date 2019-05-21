@@ -70,15 +70,14 @@ definitions:
  PublicServiceDataset:
    type: "object"
    properties:
-     hasPublicService:
+     hasPart:
        type: "array"
        items:
          $ref: "#/definitions/PublicService"
        xml:
-         name: "Public Service"
          wrapped: true
    xml:
-     name: "PublicServiceDataset"
+         name: "PublicServiceDataset"
 
  PublicService:
    type: "object"
@@ -90,25 +89,22 @@ definitions:
      title: 
        type: "string"
        xml:
-         name: "name"
+         name: "title"
      description: 
        type: "string"
        xml:
-         name: "description"
+         name: "id"
      type: 
        $ref: "#/definitions/Concept"
      language: 
        $ref: "#/definitions/Language"
      spatial: 
        $ref: "#/definitions/Location"
-     modified: 
-       type: "string"
-       xml:
-         name: "modified"
      hasCompetentAuthority:
        $ref: "#/definitions/PublicOrganisation"
    xml:
      name: "PublicService"
+
  PublicOrganisation:
    type: "object"
    properties:
@@ -120,6 +116,7 @@ definitions:
        $ref: "#/definitions/Location"
    xml:
      name: "PublicService"
+
  Location:
    type: "object"
    properties:
@@ -129,6 +126,7 @@ definitions:
          name: "id"
    xml:
      name: "Location"
+
  Concept:
    type: "object"
    properties:
@@ -138,6 +136,7 @@ definitions:
          name: "id"
    xml:
      name: "Concept"
+
  Language:
    type: "object"
    properties:
@@ -147,6 +146,7 @@ definitions:
          name: "id"
    xml:
      name: "Language"
+
 externalDocs:
  description: "Find out more about Swagger"
  url: "http://swagger.io"

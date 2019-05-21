@@ -1,7 +1,11 @@
 package io.swagger.api;
 
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.ObjectOutput;
+import java.io.ObjectOutputStream;
 import java.io.OutputStream;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Type;
@@ -25,6 +29,7 @@ import org.apache.avro.io.EncoderFactory;
 import org.apache.avro.specific.SpecificDatumReader;
 import org.apache.avro.specific.SpecificDatumWriter;
 import org.apache.avro.specific.SpecificRecord;
+import org.apache.commons.lang3.SerializationUtils;
 import org.springframework.context.annotation.Bean;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
@@ -32,6 +37,7 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.avro.AvroMapper;
 import com.fasterxml.jackson.dataformat.avro.AvroSchema;
+import com.fasterxml.jackson.dataformat.protobuf.schema.ProtobufSchema;
 
 import io.swagger.api.GenericReport;;
 
@@ -100,5 +106,15 @@ public class AvroProvider implements MessageBodyWriter<GenericReport>, MessageBo
 		
 		System.out.println("avro write to");
 	    avroMapper.writer(schema).writeValue(arg6, arg0);
+	    
+//		System.out.println("write to");
+//	    byte[] myarray = avroMapper.writer(schema).writeValueAsBytes(arg0);
+//	    StringBuilder sb = new StringBuilder();
+//	    for (byte b : myarray) {
+//	        sb.append(String.format("%02X ", b));
+//	    }
+//	    System.out.println("myarray:" + sb.toString());
+//	    System.out.println(myarray.length);
+//	    arg6.write(myarray);
 	}
 }

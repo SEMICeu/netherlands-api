@@ -105,5 +105,15 @@ public class ProtobufProvider implements MessageBodyWriter<GenericReport>, Messa
 		System.out.println("proto write to");
 		ProtobufSchema schemaWrapper = mapper.generateSchemaFor(arg1);
 	    mapper.writer(schemaWrapper).writeValue(arg6, arg0);
+	    
+//		System.out.println("proto write to");
+//	    byte[] myarray = mapper.writer(schemaWrapper).writeValueAsBytes(arg0);
+//	    StringBuilder sb = new StringBuilder();
+//	    for (byte b : myarray) {
+//	        sb.append(String.format("%02X ", b));
+//	    }
+//	    System.out.println("myarray:" + sb.toString());
+//	    System.out.println(myarray.length);
+//	    arg6.write(myarray);
 	}
 }

@@ -4,7 +4,6 @@ import io.swagger.model.Concept;
 import io.swagger.model.Language;
 import io.swagger.model.Location;
 import io.swagger.model.PublicOrganisation;
-import ioinformarics.oss.jackson.module.jsonld.annotation.JsonldId;
 import ioinformarics.oss.jackson.module.jsonld.annotation.JsonldType;
 
 import javax.validation.constraints.*;
@@ -22,7 +21,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 @JsonldType("http://purl.org/vocab/cpsv#PublicService")
 public class PublicService  {
   
-  @JsonldId
   @ApiModelProperty(value = "")
   private String id = null;
 
@@ -42,15 +40,12 @@ public class PublicService  {
   private Location spatial = null;
 
   @ApiModelProperty(value = "")
-  private String modified = null;
-
-  @ApiModelProperty(value = "")
   private PublicOrganisation hasCompetentAuthority = null;
  /**
    * Get id
    * @return id
   **/
-  @JsonProperty("@id")
+  @JsonProperty("id")
   public String getId() {
     return id;
   }
@@ -155,24 +150,6 @@ public class PublicService  {
   }
 
  /**
-   * Get modified
-   * @return modified
-  **/
-  @JsonProperty("modified")
-  public String getModified() {
-    return modified;
-  }
-
-  public void setModified(String modified) {
-    this.modified = modified;
-  }
-
-  public PublicService modified(String modified) {
-    this.modified = modified;
-    return this;
-  }
-
- /**
    * Get hasCompetentAuthority
    * @return hasCompetentAuthority
   **/
@@ -202,7 +179,6 @@ public class PublicService  {
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("    language: ").append(toIndentedString(language)).append("\n");
     sb.append("    spatial: ").append(toIndentedString(spatial)).append("\n");
-    sb.append("    modified: ").append(toIndentedString(modified)).append("\n");
     sb.append("    hasCompetentAuthority: ").append(toIndentedString(hasCompetentAuthority)).append("\n");
     sb.append("}");
     return sb.toString();

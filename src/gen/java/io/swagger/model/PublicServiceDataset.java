@@ -6,12 +6,15 @@ import ioinformarics.oss.jackson.module.jsonld.annotation.JsonldType;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import javax.validation.Valid;
 import javax.validation.constraints.*;
 
 import io.swagger.annotations.ApiModelProperty;
 import io.swagger.api.GenericReport;
 
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -19,33 +22,37 @@ import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
 
-@JsonldRemoteContext(value="https://raw.githubusercontent.com/catalogue-of-services-isa/netherlands-api/master/src/main/resources/CPSV-AP_v2.2.1.jsonld")
+@JsonldRemoteContext(value="https://raw.githubusercontent.com/catalogue-of-services-isa/CPSV-AP/master/releases/2.2.1/CPSV-AP_v2.2.1.jsonld")
 @JsonldType("http://data.europa.eu/m8g/PublicServiceDataset")
 public class PublicServiceDataset implements GenericReport {
-  
-  @ApiModelProperty(value = "")
-  private List<PublicService> hasPublicService = null;
+
+  @XmlElement(name = "PublicService")
+  @ApiModelProperty(value = "PublicService") 
+  @XmlElementWrapper(name = "hasPart")
+  @Valid
+  private List<PublicService> hasPart = null;
  /**
-   * Get hasPublicService
-   * @return hasPublicService
+   * Get hasPart
+   * @return hasPart
   **/
-  @JsonProperty("hasPublicService")
-  public List<PublicService> getHasPublicService() {
-    return hasPublicService;
+  public List<PublicService> getHasPart() {
+    return hasPart;
   }
 
-  public void setHasPublicService(List<PublicService> hasPublicService) {
-    this.hasPublicService = hasPublicService;
+ 
+  public void setHasPart(List<PublicService> hasPart) {
+    this.hasPart = hasPart;
   }
 
-  public PublicServiceDataset hasPublicService(List<PublicService> hasPublicService) {
-    this.hasPublicService = hasPublicService;
+  public PublicServiceDataset hasPart(List<PublicService> hasPart) {
+    this.hasPart = hasPart;
     return this;
   }
 
-  public PublicServiceDataset addHasPublicServiceItem(PublicService hasPublicServiceItem) {
-    this.hasPublicService.add(hasPublicServiceItem);
+  public PublicServiceDataset addHasPartItem(PublicService hasPartItem) {
+    this.hasPart.add(hasPartItem);
     return this;
   }
 
@@ -55,7 +62,7 @@ public class PublicServiceDataset implements GenericReport {
     StringBuilder sb = new StringBuilder();
     sb.append("class PublicServiceDataset {\n");
     
-    sb.append("    hasPublicService: ").append(toIndentedString(hasPublicService)).append("\n");
+    sb.append("    hasPart: ").append(toIndentedString(hasPart)).append("\n");
     sb.append("}");
     return sb.toString();
   }

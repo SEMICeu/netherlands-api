@@ -1,7 +1,6 @@
 package io.swagger.model;
 
 import io.swagger.model.Location;
-import ioinformarics.oss.jackson.module.jsonld.annotation.JsonldId;
 import ioinformarics.oss.jackson.module.jsonld.annotation.JsonldType;
 
 import javax.validation.constraints.*;
@@ -19,7 +18,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 @JsonldType("http://data.europa.eu/m8g/PublicOrganisation")
 public class PublicOrganisation  {
   
-  @JsonldId
   @ApiModelProperty(value = "")
   private String id = null;
 
@@ -29,7 +27,7 @@ public class PublicOrganisation  {
    * Get id
    * @return id
   **/
-  @JsonProperty("@id")
+  @JsonProperty("id")
   public String getId() {
     return id;
   }
@@ -38,7 +36,6 @@ public class PublicOrganisation  {
     this.id = id;
   }
 
-  
   public PublicOrganisation id(String id) {
     this.id = id;
     return this;

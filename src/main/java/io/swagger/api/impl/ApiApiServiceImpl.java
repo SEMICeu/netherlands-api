@@ -105,7 +105,6 @@ public class ApiApiServiceImpl implements ApiApi {
         	
         	
         	ps1.setDescription(sru.getPublicService_description());
-        	ps1.setModified(sru.getPublicService_modified());
         	
         	po1.setId(sru.getPublicOrganisation_id());
         	ps1.setHasCompetentAuthority(po1);
@@ -113,7 +112,7 @@ public class ApiApiServiceImpl implements ApiApi {
         	publicServiceList.add(ps1);		
     	}
     	
-    	dataset.setHasPublicService(publicServiceList);
+    	dataset.setHasPart(publicServiceList);
 	
 		} catch (MalformedURLException e1) {
 			// TODO Auto-generated catch block

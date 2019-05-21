@@ -89,5 +89,15 @@ public class CborProvider implements MessageBodyWriter<GenericReport>, MessageBo
 		
 		System.out.println("cbor write to");
 		mapper.writerFor(arg1).writeValue(arg6, arg0);
+		
+//		System.out.println("cbor write to");
+//	    byte[] myarray = mapper.writerFor(arg1).writeValueAsBytes(arg0);
+//	    StringBuilder sb = new StringBuilder();
+//	    for (byte b : myarray) {
+//	        sb.append(String.format("%02X ", b));
+//	    }
+//	    System.out.println("myarray:" + sb.toString());
+//	    System.out.println(myarray.length);
+//	    arg6.write(myarray);
 	}
 }
