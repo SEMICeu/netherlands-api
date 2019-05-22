@@ -57,6 +57,7 @@ public class ApiApiServiceImpl implements ApiApi {
      * Get a list of Public services
      *
      */
+	@CacheControl("max-age=600")
     public PublicServiceDataset getPublicServices(String startRecord, String maximumRecords, String query) {
     	
     	PublicServiceDataset dataset = new PublicServiceDataset();
