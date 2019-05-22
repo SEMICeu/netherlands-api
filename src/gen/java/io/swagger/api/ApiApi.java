@@ -37,7 +37,7 @@ public interface ApiApi  {
      */
     @GET
     @Path("/PublicServices")
-    @Produces({ "application/json", "application/xml", "application/ld+json", "application/x-jackson-smile", "avro/binary", "application/cbor", "application/protobuf", "application/ion", "application/msgpack", "application/bson" })
+    @Produces({ "application/ld+json", "application/json", "application/xml", "application/x-jackson-smile", "avro/binary", "application/cbor", "application/protobuf", "application/ion", "application/msgpack", "application/bson" })
     @ApiOperation(value = "Get list of Public services", tags={ "api" })
     @ApiResponses(value = { 
         @ApiResponse(code = 200, message = "successful operation", response = PublicServiceDataset.class),

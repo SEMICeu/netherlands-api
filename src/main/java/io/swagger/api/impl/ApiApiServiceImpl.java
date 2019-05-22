@@ -60,9 +60,11 @@ public class ApiApiServiceImpl implements ApiApi {
     public PublicServiceDataset getPublicServices(String startRecord, String maximumRecords, String query) {
     	
     	PublicServiceDataset dataset = new PublicServiceDataset();
-    	
+    	System.out.println("startrecord:"+startRecord);
+    	System.out.println("maximumRecords:"+maximumRecords);
+    	System.out.println("query:"+query);
     	try {
-    	SearchRetrieveResponseDefinition response = getResponse("http://localhost/netherlands/SRUResponse.xml", "1", "10", "authority=\"Gelderland\"");
+    	SearchRetrieveResponseDefinition response = getResponse("http://zoekdienst.overheid.nl/SRUServices/SRUServices.asmx/Search", startRecord, maximumRecords, query);
     	int records = response.getRecords().getRecord().size();
     	System.out.println("*********************************************************************************Number of Records: "+ records);
     	
@@ -228,7 +230,7 @@ public class ApiApiServiceImpl implements ApiApi {
 		}
 
     	HttpURLConnection connection;
-			String url = url1;
+			String url = url1 + "?" + query;
 			connection = (HttpURLConnection) new URL(url).openConnection();
 			System.out.println(url);
 			connection.setRequestProperty("Accept-Charset", charset);

@@ -28,9 +28,9 @@ paths:
      description: "Get a list of Public services"
      operationId: "GetPublicServices"
      produces:
+     - "application/ld+json"
      - "application/json"
      - "application/xml"
-     - "application/ld+json"
      - "application/x-jackson-smile"
      - "avro/binary"    
      - "application/cbor"
