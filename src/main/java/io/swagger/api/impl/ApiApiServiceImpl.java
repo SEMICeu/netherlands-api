@@ -77,41 +77,43 @@ public class ApiApiServiceImpl implements ApiApi {
         	PublicOrganisation po1 = new PublicOrganisation();
         	
             Integer sizeOfConcept = sru.getPublicService_type().size();
-        	Concept co1 = new Concept();
+        	
         	if (sizeOfConcept > 0) {
-        		for (int n = 0; n < sru.getPublicService_type().size(); n++) {
+        		for (int n = 0; n < sizeOfConcept; n++) {
+        			Concept co1 = new Concept();
         			co1.setId(sru.getPublicService_type().get(n));
-        		} 
-        		ps1.setType(co1);
+        			ps1.setType(co1);
+        		} 		
         	}
         	
         	Integer sizeOfLanguage = sru.getPublicService_language().size();
-        	Language lg1 = new Language();
+        	
         	if (sizeOfLanguage > 0) {
-        		for (int n = 0; n < sru.getPublicService_language().size(); n++) {
-        		lg1.setId(sru.getPublicService_language().get(n));
+        		for (int n = 0; n < sizeOfLanguage; n++) {
+	        		Language lg1 = new Language();
+	        		lg1.setId(getMDRLanguage(sru.getPublicService_language().get(n)));
+	        		ps1.setLanguage(lg1);
         		}
-        		ps1.setLanguage(lg1);
+        		
         	}
         	Integer sizeOfLocation = sru.getPublicService_spatial().size();
-        	Location lo1 = new Location(); 
+        	
         	if (sizeOfLocation > 0) {
-        		for (int n = 0; n < sru.getPublicService_spatial().size(); n++) {
+        		for (int n = 0; n < sizeOfLocation; n++) {
+        			Location lo1 = new Location(); 
         			lo1.setId(sru.getPublicService_spatial().get(n));
-        		}
-        		ps1.setSpatial(lo1);
+        			ps1.setSpatial(lo1);
+        			po1.setSpatial(lo1);
+        		} 		
         	}
 
         	ps1.setId(sru.getPublicService_id());
         	ps1.setTitle(sru.getPublicService_title());
-        	
-        	
-        	
         	ps1.setDescription(sru.getPublicService_description());
         	
         	po1.setId(sru.getPublicOrganisation_id());
         	ps1.setHasCompetentAuthority(po1);
-        	po1.setSpatial(lo1);
+        	
         	publicServiceList.add(ps1);		
     	}
     	
@@ -131,6 +133,15 @@ public class ApiApiServiceImpl implements ApiApi {
         return dataset; 
     }
     
+	public String getMDRLanguage(String language) {
+		String MDRLanguage ="";
+		if(language.equals(new String("nl"))) {
+			MDRLanguage = "http://publications.europa.eu/resource/authority/language/NLD";
+		}
+			
+		return MDRLanguage;
+	}
+	
     public SruObject getSRUObject(SearchRetrieveResponseDefinition response, Integer index) throws JAXBException {
     
     	SruObject sru = new SruObject();
