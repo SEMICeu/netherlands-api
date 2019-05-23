@@ -64,11 +64,11 @@
     <property name="version" value="1.0.0"/>
     <property name="host" value="localhost:8080"/>
     <property name="basePath" value="swagger-cxf-server-1.0.0/api"/>
-    <property name="title" value="Swagger Petstore"/>
-    <property name="description" value="This is a app."/>
-    <property name="contact" value="apiteam@swagger.io"/>
-    <property name="license" value="Apache 2.0"/>
-    <property name="licenseUrl" value="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+    <property name="title" value="Samenwerkende Catalogi CPSV-AP API"/>
+    <property name="description" value="Samenwerkende Catalogi CPSV-AP API."/>
+    <property name="contact" value="Marco.Aarts@ictu.nl"/>
+    <property name="license" value="EUPL"/>
+    <property name="licenseUrl" value="https://joinup.ec.europa.eu/collection/eupl/eupl-text-11-12"/>
     <!-- <property name="filterClass" value="ApiAuthorizationFilterImpl"/> -->
     <property name="scan" value="true"/>
   </bean>
