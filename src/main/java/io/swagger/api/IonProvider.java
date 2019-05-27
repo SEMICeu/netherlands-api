@@ -53,20 +53,20 @@ public class IonProvider implements MessageBodyWriter<GenericReport>, MessageBod
     	ionFactory = new IonFactory();
     	ionFactory.setCreateBinaryWriters(true);
     	mapper = new ObjectMapper(ionFactory);
-		System.out.println("ion constructor");
+//		System.out.println("ion constructor");
     }
     
 	@Override
 	public boolean isReadable(Class<?> arg0, Type arg1, Annotation[] arg2, MediaType arg3) {
 		// TODO Auto-generated method stub
-		System.out.println("ion is readable");
+//		System.out.println("ion is readable");
 		return true;
 	}
 
 	@Override
 	public boolean isWriteable(Class<?> arg0, Type arg1, Annotation[] arg2, MediaType arg3) {
 		// TODO Auto-generated method stub
-		System.out.println("ion is writeable");
+//		System.out.println("ion is writeable");
         return true;
 	}
 
@@ -75,7 +75,7 @@ public class IonProvider implements MessageBodyWriter<GenericReport>, MessageBod
 	public GenericReport readFrom(Class<GenericReport> arg0, Type arg1, Annotation[] arg2, MediaType arg3,
 			MultivaluedMap<String, String> arg4, InputStream arg5) throws IOException, WebApplicationException {
 		// TODO Auto-generated method stub
-		System.out.println("ion read from");
+//		System.out.println("ion read from");
 		GenericReport report = mapper.readerFor(arg0).readValue(arg5);
 		//GenericReport report = avroMapper.readerFor(arg0).with(schema).readValue(arg5);
 		//.reader(GenericReport.class).with(schema).readValue(arg5);
@@ -86,7 +86,7 @@ public class IonProvider implements MessageBodyWriter<GenericReport>, MessageBod
 	@Override
 	public long getSize(GenericReport arg0, Class<?> arg1, Type arg2, Annotation[] arg3, MediaType arg4) {
 		// TODO Auto-generated method stub
-		System.out.println("ion  get size");
+//		System.out.println("ion  get size");
 		return -1;
 	}
 
@@ -95,7 +95,7 @@ public class IonProvider implements MessageBodyWriter<GenericReport>, MessageBod
 			MultivaluedMap<String, Object> arg5, OutputStream arg6) throws IOException, WebApplicationException {
 		// TODO Auto-generated method stub
 		
-		System.out.println("ion write to");
+//		System.out.println("ion write to");
 		mapper.writerFor(arg1).writeValue(arg6, arg0);
 	    //mapper.writer(schema).writeValue(arg6, arg0);
 		

@@ -17,8 +17,8 @@ public class ProtoGenerator {
    	final ProtobufMapper mapper = new ProtobufMapper();
    	ProtobufSchema schemaWrapper = null;
    	NativeProtobufSchema nativeProtobufSchema;
-       System.out.println("proto constructor");
-   	System.out.print("proto report is:"+ report);
+//       System.out.println("proto constructor");
+//   	System.out.print("proto report is:"+ report);
    	String classname = "";
        try {
        	Class<?> classe = Class.forName(report);

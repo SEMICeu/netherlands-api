@@ -48,20 +48,20 @@ public class BsonProvider implements MessageBodyWriter<GenericReport>, MessageBo
     final ObjectMapper mapper = new ObjectMapper(new BsonFactory()); 
 
     public BsonProvider(){
-		System.out.println("bson constructor");
+//		System.out.println("bson constructor");
     }
     
 	@Override
 	public boolean isReadable(Class<?> arg0, Type arg1, Annotation[] arg2, MediaType arg3) {
 		// TODO Auto-generated method stub
-		System.out.println("bson is readable");
+//		System.out.println("bson is readable");
 		return true;
 	}
 
 	@Override
 	public boolean isWriteable(Class<?> arg0, Type arg1, Annotation[] arg2, MediaType arg3) {
 		// TODO Auto-generated method stub
-		System.out.println("bson is writeable");
+//		System.out.println("bson is writeable");
         return true;
 	}
 
@@ -70,7 +70,7 @@ public class BsonProvider implements MessageBodyWriter<GenericReport>, MessageBo
 	public GenericReport readFrom(Class<GenericReport> arg0, Type arg1, Annotation[] arg2, MediaType arg3,
 			MultivaluedMap<String, String> arg4, InputStream arg5) throws IOException, WebApplicationException {
 		// TODO Auto-generated method stub
-		System.out.println("bson read from");
+//		System.out.println("bson read from");
 		GenericReport report = mapper.readerFor(arg0).readValue(arg5);
 		//.reader(ValidationReport.class).with(schema).readValue(arg5);
 				
@@ -80,7 +80,7 @@ public class BsonProvider implements MessageBodyWriter<GenericReport>, MessageBo
 	@Override
 	public long getSize(GenericReport arg0, Class<?> arg1, Type arg2, Annotation[] arg3, MediaType arg4) {
 		// TODO Auto-generated method stub
-		System.out.println("bson get size");
+//		System.out.println("bson get size");
 		return -1;
 	}
 
@@ -89,7 +89,7 @@ public class BsonProvider implements MessageBodyWriter<GenericReport>, MessageBo
 			MultivaluedMap<String, Object> arg5, OutputStream arg6) throws IOException, WebApplicationException {
 		// TODO Auto-generated method stub
 		
-		System.out.println("bson write to");
+//		System.out.println("bson write to");
 		mapper.writerFor(arg1).writeValue(arg6, arg0);
 		
 //		System.out.println("bson write to");

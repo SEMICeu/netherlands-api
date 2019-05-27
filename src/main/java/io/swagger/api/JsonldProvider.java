@@ -48,20 +48,20 @@ public class JsonldProvider implements MessageBodyWriter<GenericReport>, Message
     public JsonldProvider(){
         JsonldModule module = new JsonldModule();
 		mapper.registerModule(module);
-		System.out.println("jsonld constructor");
+//		System.out.println("jsonld constructor");
     }
     
 	@Override
 	public boolean isReadable(Class<?> arg0, Type arg1, Annotation[] arg2, MediaType arg3) {
 		// TODO Auto-generated method stub
-		System.out.println("jsonld is readable");
+//		System.out.println("jsonld is readable");
 		return true;
 	}
 
 	@Override
 	public boolean isWriteable(Class<?> arg0, Type arg1, Annotation[] arg2, MediaType arg3) {
 		// TODO Auto-generated method stub
-		System.out.println("jsonld is writeable");
+//		System.out.println("jsonld is writeable");
         return true;
 	}
 
@@ -70,7 +70,7 @@ public class JsonldProvider implements MessageBodyWriter<GenericReport>, Message
 	public GenericReport readFrom(Class<GenericReport> arg0, Type arg1, Annotation[] arg2, MediaType arg3,
 			MultivaluedMap<String, String> arg4, InputStream arg5) throws IOException, WebApplicationException {
 		// TODO Auto-generated method stub
-		System.out.println("jsonld read from");
+//		System.out.println("jsonld read from");
 		GenericReport report = mapper.readerFor(arg0).readValue(arg5);
 		//GenericReport report = avroMapper.readerFor(arg0).with(schema).readValue(arg5);
 		//.reader(GenericReport.class).with(schema).readValue(arg5);
@@ -81,7 +81,7 @@ public class JsonldProvider implements MessageBodyWriter<GenericReport>, Message
 	@Override
 	public long getSize(GenericReport arg0, Class<?> arg1, Type arg2, Annotation[] arg3, MediaType arg4) {
 		// TODO Auto-generated method stub
-		System.out.println("jsonld  get size");
+//		System.out.println("jsonld  get size");
 		return -1;
 	}
 
@@ -90,7 +90,7 @@ public class JsonldProvider implements MessageBodyWriter<GenericReport>, Message
 			MultivaluedMap<String, Object> arg5, OutputStream arg6) throws IOException, WebApplicationException {
 		// TODO Auto-generated method stub
 		
-		System.out.println("jsonld  write to");
+//		System.out.println("jsonld  write to");
 		mapper.writerFor(arg1).writeValue(arg6, arg0);
 	    //mapper.writer(schema).writeValue(arg6, arg0);
 	}

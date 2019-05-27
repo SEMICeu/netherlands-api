@@ -52,10 +52,10 @@ public class AvroProvider implements MessageBodyWriter<GenericReport>, MessageBo
     final AvroMapper avroMapper = new AvroMapper();
 
     public AvroProvider(String report){
-    	System.out.print("avro report is:"+ report);
+//    	System.out.print("avro report is:"+ report);
         try {
 			schema = avroMapper.schemaFor(Class.forName(report));
-			System.out.println("avro constructor");
+//			System.out.println("avro constructor");
 		} catch (JsonMappingException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -69,14 +69,14 @@ public class AvroProvider implements MessageBodyWriter<GenericReport>, MessageBo
 	@Override
 	public boolean isReadable(Class<?> arg0, Type arg1, Annotation[] arg2, MediaType arg3) {
 		// TODO Auto-generated method stub
-		System.out.println("avro is readable");
+//		System.out.println("avro is readable");
 		return true;
 	}
 
 	@Override
 	public boolean isWriteable(Class<?> arg0, Type arg1, Annotation[] arg2, MediaType arg3) {
 		// TODO Auto-generated method stub
-		System.out.println("avro is writeable");
+//		System.out.println("avro is writeable");
         return true;
 	}
 
@@ -85,7 +85,7 @@ public class AvroProvider implements MessageBodyWriter<GenericReport>, MessageBo
 	public GenericReport readFrom(Class<GenericReport> arg0, Type arg1, Annotation[] arg2, MediaType arg3,
 			MultivaluedMap<String, String> arg4, InputStream arg5) throws IOException, WebApplicationException {
 		// TODO Auto-generated method stub
-		System.out.println("avro read from");
+//		System.out.println("avro read from");
 		GenericReport report = avroMapper.readerFor(arg0).with(schema).readValue(arg5);
 		//.reader(ValidationReport.class).with(schema).readValue(arg5);
 				
@@ -95,7 +95,7 @@ public class AvroProvider implements MessageBodyWriter<GenericReport>, MessageBo
 	@Override
 	public long getSize(GenericReport arg0, Class<?> arg1, Type arg2, Annotation[] arg3, MediaType arg4) {
 		// TODO Auto-generated method stub
-		System.out.println("avro get size");
+//		System.out.println("avro get size");
 		return -1;
 	}
 
@@ -104,7 +104,7 @@ public class AvroProvider implements MessageBodyWriter<GenericReport>, MessageBo
 			MultivaluedMap<String, Object> arg5, OutputStream arg6) throws IOException, WebApplicationException {
 		// TODO Auto-generated method stub
 		
-		System.out.println("avro write to");
+//		System.out.println("avro write to");
 	    avroMapper.writer(schema).writeValue(arg6, arg0);
 	    
 //		System.out.println("write to");

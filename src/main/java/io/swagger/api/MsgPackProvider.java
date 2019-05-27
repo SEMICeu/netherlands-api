@@ -48,20 +48,20 @@ public class MsgPackProvider implements MessageBodyWriter<GenericReport>, Messag
     final ObjectMapper mapper = new ObjectMapper(new MessagePackFactory()); 
 
     public MsgPackProvider(){
-		System.out.println("msgpack constructor");
+//		System.out.println("msgpack constructor");
     }
     
 	@Override
 	public boolean isReadable(Class<?> arg0, Type arg1, Annotation[] arg2, MediaType arg3) {
 		// TODO Auto-generated method stub
-		System.out.println("msgpack is readable");
+//		System.out.println("msgpack is readable");
 		return true;
 	}
 
 	@Override
 	public boolean isWriteable(Class<?> arg0, Type arg1, Annotation[] arg2, MediaType arg3) {
 		// TODO Auto-generated method stub
-		System.out.println("msgpack is writeable");
+//		System.out.println("msgpack is writeable");
         return true;
 	}
 
@@ -70,7 +70,7 @@ public class MsgPackProvider implements MessageBodyWriter<GenericReport>, Messag
 	public GenericReport readFrom(Class<GenericReport> arg0, Type arg1, Annotation[] arg2, MediaType arg3,
 			MultivaluedMap<String, String> arg4, InputStream arg5) throws IOException, WebApplicationException {
 		// TODO Auto-generated method stub
-		System.out.println("msgpack read from");
+//		System.out.println("msgpack read from");
 		GenericReport report = mapper.readerFor(arg0).readValue(arg5);
 		//.reader(GenericReport.class).with(schema).readValue(arg5);
 				
@@ -80,7 +80,7 @@ public class MsgPackProvider implements MessageBodyWriter<GenericReport>, Messag
 	@Override
 	public long getSize(GenericReport arg0, Class<?> arg1, Type arg2, Annotation[] arg3, MediaType arg4) {
 		// TODO Auto-generated method stub
-		System.out.println("msgpack get size");
+//		System.out.println("msgpack get size");
 		return -1;
 	}
 
@@ -89,7 +89,7 @@ public class MsgPackProvider implements MessageBodyWriter<GenericReport>, Messag
 			MultivaluedMap<String, Object> arg5, OutputStream arg6) throws IOException, WebApplicationException {
 		// TODO Auto-generated method stub
 		
-		System.out.println("msgpack write to");
+//		System.out.println("msgpack write to");
 		mapper.writerFor(arg1).writeValue(arg6, arg0);
 		
 //		System.out.println("msgpack write to");

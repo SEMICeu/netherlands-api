@@ -50,7 +50,7 @@ public class ProtobufProvider implements MessageBodyWriter<GenericReport>, Messa
 	NativeProtobufSchema nativeProtobufSchema;
 
     public ProtobufProvider(String report){
-        System.out.println("proto constructor");
+//        System.out.println("proto constructor");
     	System.out.print("proto report is:"+ report);
         try {
 			schemaWrapper = mapper.generateSchemaFor(Class.forName(report));
@@ -67,14 +67,14 @@ public class ProtobufProvider implements MessageBodyWriter<GenericReport>, Messa
 	@Override
 	public boolean isReadable(Class<?> arg0, Type arg1, Annotation[] arg2, MediaType arg3) {
 		// TODO Auto-generated method stub
-		System.out.println("proto is readable");
+//		System.out.println("proto is readable");
 		return true;
 	}
 
 	@Override
 	public boolean isWriteable(Class<?> arg0, Type arg1, Annotation[] arg2, MediaType arg3) {
 		// TODO Auto-generated method stub
-		System.out.println("proto is writeable");
+//		System.out.println("proto is writeable");
         return true;
 	}
 
@@ -83,7 +83,7 @@ public class ProtobufProvider implements MessageBodyWriter<GenericReport>, Messa
 	public GenericReport readFrom(Class<GenericReport> arg0, Type arg1, Annotation[] arg2, MediaType arg3,
 			MultivaluedMap<String, String> arg4, InputStream arg5) throws IOException, WebApplicationException {
 		// TODO Auto-generated method stub
-		System.out.println("proto read from");
+//		System.out.println("proto read from");
 		GenericReport report = mapper.readerFor(arg0).with(schemaWrapper).readValue(arg5);
 		//.reader(GenericReport.class).with(schema).readValue(arg5);
 				
@@ -93,7 +93,7 @@ public class ProtobufProvider implements MessageBodyWriter<GenericReport>, Messa
 	@Override
 	public long getSize(GenericReport arg0, Class<?> arg1, Type arg2, Annotation[] arg3, MediaType arg4) {
 		// TODO Auto-generated method stub
-		System.out.println("proto get size");
+//		System.out.println("proto get size");
 		return -1;
 	}
 
@@ -102,7 +102,7 @@ public class ProtobufProvider implements MessageBodyWriter<GenericReport>, Messa
 			MultivaluedMap<String, Object> arg5, OutputStream arg6) throws IOException, WebApplicationException {
 		// TODO Auto-generated method stub
 		
-		System.out.println("proto write to");
+//		System.out.println("proto write to");
 		ProtobufSchema schemaWrapper = mapper.generateSchemaFor(arg1);
 	    mapper.writer(schemaWrapper).writeValue(arg6, arg0);
 	    

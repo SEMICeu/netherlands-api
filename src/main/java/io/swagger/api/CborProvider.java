@@ -46,20 +46,20 @@ public class CborProvider implements MessageBodyWriter<GenericReport>, MessageBo
     final ObjectMapper mapper = new ObjectMapper(new CBORFactory()); 
 
     public CborProvider(){
-		System.out.println("cbor constructor");
+//		System.out.println("cbor constructor");
     }
     
 	@Override
 	public boolean isReadable(Class<?> arg0, Type arg1, Annotation[] arg2, MediaType arg3) {
 		// TODO Auto-generated method stub
-		System.out.println("cbor is readable");
+//		System.out.println("cbor is readable");
 		return true;
 	}
 
 	@Override
 	public boolean isWriteable(Class<?> arg0, Type arg1, Annotation[] arg2, MediaType arg3) {
 		// TODO Auto-generated method stub
-		System.out.println("cbor is writeable");
+//		System.out.println("cbor is writeable");
         return true;
 	}
 
@@ -68,7 +68,7 @@ public class CborProvider implements MessageBodyWriter<GenericReport>, MessageBo
 	public GenericReport readFrom(Class<GenericReport> arg0, Type arg1, Annotation[] arg2, MediaType arg3,
 			MultivaluedMap<String, String> arg4, InputStream arg5) throws IOException, WebApplicationException {
 		// TODO Auto-generated method stub
-		System.out.println("cbor read from");
+//		System.out.println("cbor read from");
 		GenericReport report = mapper.readerFor(arg0).readValue(arg5);
 		//.reader(GenericReport.class).with(schema).readValue(arg5);
 				
@@ -78,7 +78,7 @@ public class CborProvider implements MessageBodyWriter<GenericReport>, MessageBo
 	@Override
 	public long getSize(GenericReport arg0, Class<?> arg1, Type arg2, Annotation[] arg3, MediaType arg4) {
 		// TODO Auto-generated method stub
-		System.out.println("cbor get size");
+//		System.out.println("cbor get size");
 		return -1;
 	}
 
@@ -87,7 +87,7 @@ public class CborProvider implements MessageBodyWriter<GenericReport>, MessageBo
 			MultivaluedMap<String, Object> arg5, OutputStream arg6) throws IOException, WebApplicationException {
 		// TODO Auto-generated method stub
 		
-		System.out.println("cbor write to");
+//		System.out.println("cbor write to");
 		mapper.writerFor(arg1).writeValue(arg6, arg0);
 		
 //		System.out.println("cbor write to");

@@ -61,14 +61,13 @@ public class ApiApiServiceImpl implements ApiApi {
     public PublicServiceDataset getPublicServices(String startRecord, String maximumRecords, String query) {
     	
     	PublicServiceDataset dataset = new PublicServiceDataset();
-    	System.out.println("startrecord:"+startRecord);
-    	System.out.println("maximumRecords:"+maximumRecords);
-    	System.out.println("query:"+query);
+//    	System.out.println("startrecord:"+startRecord);
+//    	System.out.println("maximumRecords:"+maximumRecords);
+//    	System.out.println("query:"+query);
     	try {
     	SearchRetrieveResponseDefinition response = getResponse("http://zoekdienst.overheid.nl/SRUServices/SRUServices.asmx/Search", startRecord, maximumRecords, query);
     	int records = response.getRecords().getRecord().size();
-    	System.out.println("*********************************************************************************Number of Records: "+ records);
-    	
+    	    	
     	List<PublicService> publicServiceList = new ArrayList<PublicService>();
     
     	for (int i = 0; i < records; i++) {
@@ -108,6 +107,7 @@ public class ApiApiServiceImpl implements ApiApi {
         	}
 
         	ps1.setId(sru.getPublicService_id());
+        	ps1.setIdentifier(sru.getPublicService_id());
         	ps1.setTitle(sru.getPublicService_title());
         	ps1.setDescription(sru.getPublicService_description());
         	
@@ -156,30 +156,30 @@ public class ApiApiServiceImpl implements ApiApi {
 		Scproduct scProduct = ((Scproduct) jc3.createUnmarshaller().unmarshal((Node) scproduct));
 		
 		Owmskern publicService = scProduct.getMeta().getOwmskern();
-		System.out.println("Identifier: "+publicService.getIdentifier());
+//		System.out.println("Identifier: "+publicService.getIdentifier());
 		sru.setPublicService_id(publicService.getIdentifier());
 		
-		System.out.println("Title: "+publicService.getTitle().getValue());
+//		System.out.println("Title: "+publicService.getTitle().getValue());
 		sru.setPublicService_title(publicService.getTitle().getValue());
 		
-		System.out.println("Modified: "+publicService.getModified());
+//		System.out.println("Modified: "+publicService.getModified());
 		sru.setPublicService_modified(publicService.getModified());
 		
 		List<String> listOfLanguages = publicService.getLanguage();
 		for (int i = 0; i < listOfLanguages.size(); i++) {
-			System.out.println("Language: "+publicService.getLanguage().get(i));
+//			System.out.println("Language: "+publicService.getLanguage().get(i));
 		}
 		sru.setPublicService_language(listOfLanguages);
 		
 		List<org.purl.dc.terms.Location> listOfSpatials = publicService.getSpatial();
 		List<String> listOfSpatialStrings = new ArrayList<String>();
 		for (int i = 0; i < listOfSpatials.size(); i++) {
-			System.out.println("Spatial: "+publicService.getSpatial().get(i).getResourceIdentifier());
+//			System.out.println("Spatial: "+publicService.getSpatial().get(i).getResourceIdentifier());
 			listOfSpatialStrings.add(publicService.getSpatial().get(i).getResourceIdentifier());
 		}
 		sru.setPublicService_spatial(listOfSpatialStrings);
 		
-		System.out.println("Competent Authority: "+publicService.getAuthority().get(0).getResourceIdentifier());
+//		System.out.println("Competent Authority: "+publicService.getAuthority().get(0).getResourceIdentifier());
 		sru.setPublicOrganisation_id(publicService.getAuthority().get(0).getResourceIdentifier());
 		
 		// Get the SC-specifieke metadata
@@ -188,23 +188,23 @@ public class ApiApiServiceImpl implements ApiApi {
 		List<UniformeProductnaam> listOfTypes = scmeta.getUniformeProductnaam();
 		List<String> listOfTypeStrings = new ArrayList<String>();
 		for (int i = 0; i < listOfTypes.size(); i++) {
-		    System.out.println("Type: "+ listOfTypes.get(i).getResourceIdentifier());
+//		    System.out.println("Type: "+ listOfTypes.get(i).getResourceIdentifier());
 		    listOfTypeStrings.add(listOfTypes.get(i).getResourceIdentifier());
 		}
 		sru.setPublicService_type(listOfTypeStrings);
 		
 		// Get the ProductHTML	
 		ProductHTML HTMLDescription = scProduct.getBody().getProductHTML();
-		System.out.println("HTML Description: "+ HTMLDescription.getContent().get(0).toString());
+//		System.out.println("HTML Description: "+ HTMLDescription.getContent().get(0).toString());
 		sru.setPublicService_description(HTMLDescription.getContent().get(0).toString());
 		
 		// Get the Enriched Data
 		//GzdDataComplexType gzdData = new test.ObjectFactory().createGzd((GzdDataComplexType) record).getValue();
 		Object auth1 = gzdData.getEnrichedData().getAny().get(1);
 		Object auth2 = gzdData.getEnrichedData().getAny().get(3);
-		System.out.println("AuthorityURI: "+((Node)auth1).getTextContent());
+//		System.out.println("AuthorityURI: "+((Node)auth1).getTextContent());
 		sru.setPublicOrganisation_id(((Node)auth1).getTextContent());
-		System.out.println("SpatialURI: "+((Node)auth2).getTextContent());
+//		System.out.println("SpatialURI: "+((Node)auth2).getTextContent());
 		sru.setPublicOrganisation_spatial(((Node)auth2).getTextContent());
 		
     	return sru;
@@ -244,7 +244,7 @@ public class ApiApiServiceImpl implements ApiApi {
     	HttpURLConnection connection;
 			String url = url1 + "?" + query;
 			connection = (HttpURLConnection) new URL(url).openConnection();
-			System.out.println(url);
+//			System.out.println(url);
 			connection.setRequestProperty("Accept-Charset", charset);
 			
 			// Get the number of Records

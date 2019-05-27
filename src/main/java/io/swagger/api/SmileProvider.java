@@ -48,20 +48,20 @@ public class SmileProvider implements MessageBodyWriter<GenericReport>, MessageB
     final ObjectMapper mapper = new ObjectMapper(new SmileFactory()); 
 
     public SmileProvider(){
-		System.out.println("smile constructor");
+//		System.out.println("smile constructor");
     }
     
 	@Override
 	public boolean isReadable(Class<?> arg0, Type arg1, Annotation[] arg2, MediaType arg3) {
 		// TODO Auto-generated method stub
-		System.out.println("smile is readable");
+//		System.out.println("smile is readable");
 		return true;
 	}
 
 	@Override
 	public boolean isWriteable(Class<?> arg0, Type arg1, Annotation[] arg2, MediaType arg3) {
 		// TODO Auto-generated method stub
-		System.out.println("smile is writeable");
+//		System.out.println("smile is writeable");
         return true;
 	}
 
@@ -70,7 +70,7 @@ public class SmileProvider implements MessageBodyWriter<GenericReport>, MessageB
 	public GenericReport readFrom(Class<GenericReport> arg0, Type arg1, Annotation[] arg2, MediaType arg3,
 			MultivaluedMap<String, String> arg4, InputStream arg5) throws IOException, WebApplicationException {
 		// TODO Auto-generated method stub
-		System.out.println("smile read from");
+//		System.out.println("smile read from");
 		GenericReport report = mapper.readerFor(arg0).readValue(arg5);
 		//.reader(GenericReport.class).with(schema).readValue(arg5);
 				
@@ -80,7 +80,7 @@ public class SmileProvider implements MessageBodyWriter<GenericReport>, MessageB
 	@Override
 	public long getSize(GenericReport arg0, Class<?> arg1, Type arg2, Annotation[] arg3, MediaType arg4) {
 		// TODO Auto-generated method stub
-		System.out.println("smile get size");
+//		System.out.println("smile get size");
 		return -1;
 	}
 
@@ -89,7 +89,7 @@ public class SmileProvider implements MessageBodyWriter<GenericReport>, MessageB
 			MultivaluedMap<String, Object> arg5, OutputStream arg6) throws IOException, WebApplicationException {
 		// TODO Auto-generated method stub
 		
-		System.out.println("smile write to");
+//		System.out.println("smile write to");
 		mapper.writerFor(arg1).writeValue(arg6, arg0);
 		
 //		System.out.println("smile write to");

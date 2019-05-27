@@ -10,7 +10,7 @@ info:
    name: "EUPL"
    url: "https://joinup.ec.europa.eu/collection/eupl/eupl-text-11-12"
 host: "localhost:8080"
-basePath: "/api"
+basePath: "swagger-cxf-server-1.0.0/api"
 tags:
 - name: "api"
   description: "Samenwerkende Catalogi CPSV-AP API"
@@ -86,6 +86,10 @@ definitions:
        type: "string"
        xml:
          name: "id"
+     identifier: 
+       type: "string"
+       xml:
+         name: "identifier"
      title: 
        type: "string"
        xml:

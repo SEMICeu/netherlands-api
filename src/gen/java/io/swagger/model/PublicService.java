@@ -25,6 +25,9 @@ public class PublicService  {
   private String id = null;
 
   @ApiModelProperty(value = "")
+  private String identifier = null;
+
+  @ApiModelProperty(value = "")
   private String title = null;
 
   @ApiModelProperty(value = "")
@@ -56,6 +59,24 @@ public class PublicService  {
 
   public PublicService id(String id) {
     this.id = id;
+    return this;
+  }
+
+ /**
+   * Get identifier
+   * @return identifier
+  **/
+  @JsonProperty("identifier")
+  public String getIdentifier() {
+    return identifier;
+  }
+
+  public void setIdentifier(String identifier) {
+    this.identifier = identifier;
+  }
+
+  public PublicService identifier(String identifier) {
+    this.identifier = identifier;
     return this;
   }
 
@@ -174,6 +195,7 @@ public class PublicService  {
     sb.append("class PublicService {\n");
     
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    identifier: ").append(toIndentedString(identifier)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    type: ").append(toIndentedString(type)).append("\n");

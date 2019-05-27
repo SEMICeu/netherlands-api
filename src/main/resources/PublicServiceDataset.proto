@@ -4,12 +4,19 @@
 message PublicServiceDataset {
   repeated PublicService hasPart = 1;
 }
+// Message for io.swagger.model.PublicService
+message PublicService {
+  optional string id = 1;
+  optional string identifier = 2;
+  optional string title = 3;
+  optional string description = 4;
+  optional Concept type = 5;
+  optional Language language = 6;
+  optional Location spatial = 7;
+  optional PublicOrganisation hasCompetentAuthority = 8;
+}
 // Message for io.swagger.model.Language
 message Language {
-  optional string id = 1;
-}
-// Message for io.swagger.model.Concept
-message Concept {
   optional string id = 1;
 }
 // Message for io.swagger.model.Location
@@ -21,14 +28,8 @@ message PublicOrganisation {
   optional string id = 1;
   optional Location spatial = 2;
 }
-// Message for io.swagger.model.PublicService
-message PublicService {
+// Message for io.swagger.model.Concept
+message Concept {
   optional string id = 1;
-  optional string title = 2;
-  optional string description = 3;
-  optional Concept type = 4;
-  optional Language language = 5;
-  optional Location spatial = 6;
-  optional PublicOrganisation hasCompetentAuthority = 7;
 }
 

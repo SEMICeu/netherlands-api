@@ -22,7 +22,6 @@ import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
 
 @JsonldRemoteContext(value="https://raw.githubusercontent.com/catalogue-of-services-isa/CPSV-AP/master/releases/2.2.1/CPSV-AP_v2.2.1.jsonld")
 @JsonldType("http://data.europa.eu/m8g/PublicServiceDataset")
@@ -41,7 +40,6 @@ public class PublicServiceDataset implements GenericReport {
     return hasPart;
   }
 
- 
   public void setHasPart(List<PublicService> hasPart) {
     this.hasPart = hasPart;
   }
