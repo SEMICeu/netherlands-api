@@ -1,0 +1,262 @@
+{
+  "@type": "http://data.europa.eu/m8g/PublicServiceDataset",
+  "@context": "https://raw.githubusercontent.com/catalogue-of-services-isa/CPSV-AP/master/releases/2.2.1/CPSV-AP_v2.2.1.jsonld",
+  "hasPart": [{
+    "@type": "http://purl.org/vocab/cpsv#PublicService",
+    "id": "https://www.gelderland.nl/?id=4347",
+    "identifier": "https://www.gelderland.nl/?id=4347",
+    "title": "Functieverandering voor Gelders Natuurnetwerk",
+    "description": "<p><strong>Wilt u de functie van uw grond veranderen van landbouwgrond naar natuurterrein? Dan kunt u subsidie aanvragen.</strong></p> <h2><strong>Subsidiemogelijkheden</strong></h2> <p>Door dat u de functie van landbouwgrond naar nieuwe natuur verandert daalt de economische waarde van de grond. Voor die waardedaling kunt u eenmalig subsidie aanvragen. Ook voor het inrichten van het Gelders Natuurnetwerk nadat de functieverandering heeft plaatsgevonden kunt u subsidie aanvragen.</p> <h2><strong>Voorwaarden</strong></h2> <p>Om voor subsidie in aanmerking te komen, moet u voldoen aan een aantal voorwaarden. In onderstaande voorwaarden verwijzen wij naar de <a class=\"newwindow\" href=\"/Regels-Ruimte-voor-Gelderland-2016\">Regels Ruimte voor Gelderland 2016</a>, hoofdstuk 4.9 Functieverandering ten behoeve van het Gelders Natuurnetwerk.</p> <p>Daarnaast geldt als voorwaarde dat de landbouwgrond gelegen is binnen het Gelders Natuurnetwerk en is aangemerkt als N00.01 op de <a class=\"newwindow\" href=\"/Kaartenencijfers/kaart-natuurbeheerplan.html\">ambitiekaart Gelders Natuurnetwerk</a> uit het Natuurbeheerplan . De subsidie is gelijk aan de waardevermindering (met een maximum van 85%) en wordt bepaald aan de hand van taxatiewaarden van de grond vóór functieverandering (landbouwgrond) en ná functieverandering en inrichting (natuurgrond).</p> <h2><strong>Subsidie aanvragen</strong></h2> <p>U dient eerst een ‘<a href=\"/Taxatieverzoek-functieverandering-GNN\">Verzoek tot taxatie voor functieverandering voor Gelders Natuurnetwerk' (PDF 28 kB)</a> in te dienen. De provincie verstrekt u vervolgens de getaxeerde marktwaarde van uw landbouwgrond en de marktwaarde van uw toekomstige natuurgrond. Met deze taxatie-waardes kunt u de subsidieaanvraag tot functieverandering gaan invullen.</p> <p>U kunt <a class=\"newwindow\" href=\"/SUM-functieverandering-GNN\">uw subsidie aanvragen via het Subsidieportaal</a>. Na het inloggen komt u terecht bij het aanvraagformulier ‘Functieverandering en inrichting tbv GNN’.</p> <p>Voor deze subsidie is een bepaald bedrag beschikbaar gesteld. U kunt subsidie aanvragen totdat dit bedrag besteed is.</p> <h2><strong>Relevante informatie en tips</strong></h2> <p>Lees of bekijk ook:</p> <ul> <li>de <a class=\"newwindow\" href=\"/Regels-Ruimte-voor-Gelderland-2016\">Regels Ruimte voor Gelderland 2016</a>, hoofdstuk 1 (algemene bepalingen)</li> <li>de <a class=\"newwindow\" href=\"/Algemene-subsidieverordening-Gelderland-2016\">algemene subsidieverordening Gelderland 2016</a></li> <li>de <a href=\"/Handleiding-indienen-subsidieaanvraag-(Sigma)\">handleiding indienen subsidieaanvraag (PDF 1,2 MB)</a>.</li> </ul> <h2><strong>Contact</strong></h2> <p>Stel uw vraag via het <a class=\"newwindow\" href=\"/Ik-heb-een-vraag\">vragenformulier</a> of neem telefonisch contact op via 026 359 99 99.</p>",
+    "type": {
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "id": "http://standaarden.overheid.nl/owms/terms/natuurbeheer_provinciale_subsidie"
+    },
+    "language": {
+      "@type": "http://purl.org/dc/terms/LinguisticSystem",
+      "id": "http://publications.europa.eu/resource/authority/language/NLD"
+    },
+    "spatial": {
+      "@type": "http://purl.org/dc/terms/Location",
+      "id": "http://standaarden.overheid.nl/owms/terms/Gelderland"
+    },
+    "hasCompetentAuthority": {
+      "@type": "http://data.europa.eu/m8g/PublicOrganisation",
+      "id": "http://standaarden.overheid.nl/owms/terms/Gelderland",
+      "spatial": {
+        "@type": "http://purl.org/dc/terms/Location",
+        "id": "http://standaarden.overheid.nl/owms/terms/Gelderland"
+      }
+    }
+  }, {
+    "@type": "http://purl.org/vocab/cpsv#PublicService",
+    "id": "https://www.gelderland.nl/?id=4348",
+    "identifier": "https://www.gelderland.nl/?id=4348",
+    "title": "Inrichting van het Gelders Natuurnetwerk",
+    "description": "<p><strong>Wilt u aangekochte landbouwgrond inrichten als natuurgrond of bestaande natuurgrond omvormen naar een ander (hoger) natuurbeheertype? Dan kunt u subsidie aanvragen.</strong></p> <h2><strong>Subsidiemogelijkheden</strong></h2> <p>U kunt subsidie aanvragen voor:</p> <ul> <li>het inrichten van nieuwe natuur</li> <li>het uitvoeren van PAS-maatregelen (Programmatische Aanpak Stikstof), waarbij u geen nieuwe natuur wil inrichten</li> <li>het uitvoeren van maatregelen om Natura2000-gebied te herstellen, waarbij u geen nieuwe natuur wil inrichten</li> <li>het uitvoeren van maatregelen om soorten te beschermen, waarbij u geen nieuwe natuur wil inrichten</li> <li>het uitvoeren van maatregelen om de natte landnatuur te herstellen, waarbij u geen nieuwe natuur wil inrichten.</li> </ul> <p>Deze investeringssubsidie bedraagt 95% van de gemaakte inrichtingskosten tot een maximum van €13.000 per hectare.</p> <h2><strong>Voorwaarden</strong></h2> <p>Om voor subsidie in aanmerking te komen, moet u voldoen aan een aantal voorwaarden. Hiervoor verwijzen wij naar de <a class=\"newwindow\" href=\"/Regels-Ruimte-voor-Gelderland-2016\">Regels Ruimte voor Gelderland 2016</a>, hoofdstuk 4.8 Inrichting van het Gelders Natuurnetwerk.</p> <h2><strong>Subsidie aanvragen</strong></h2> <p>U kunt <a class=\"newwindow\" href=\"/SUM\">uw subsidie aanvragen via het Subsidieportaal</a>. Het juiste aanvraagformulier vindt u onder het programma ‘Functieverandering en inrichting tbv GNN’.</p> <p>Voor deze subsidie is een bepaald bedrag beschikbaar gesteld. U kunt subsidie aanvragen totdat dit subsidieplafond bereikt is.</p> <h2><strong>Relevante informatie en tips</strong></h2> <p>Lees of bekijk ook:</p> <ul> <li>de <a class=\"newwindow\" href=\"/Kaartenencijfers/kaart-natuurbeheerplan.html\">ambitiekaart Gelders Natuurnetwerk</a></li> <li><a class=\"newwindow\" href=\"/Kaartenencijfers/Omgevingsvisie.html\">kaart water en natuur van de omgevingsvisie</a></li> <li><a class=\"newwindow\" href=\"/PAS-website\">PAS-maatregelenkaart en gebiedsanalyse</a>)</li> <li><a href=\"/Beleidsnota-actieve-soortenbescherming-gelderland\">nota Actieve soortenbescherming Gelderland (PDF 2 MB)</a></li> <li>de <a class=\"newwindow\" href=\"/Regels-Ruimte-voor-Gelderland-2016\">Regels Ruimte voor Gelderland 2016</a>, hoofdstuk 1 (algemene bepalingen)</li> <li>de <a href=\"/Algemene-subsidieverordening-Gelderland-2016\">algemene subsidieverordening Gelderland 2016</a></li> <li>de <a href=\"/Handleiding-indienen-subsidieaanvraag-(Sigma)\">handleiding indienen subsidieaanvraag (PDF 1,2 MB)</a>.</li> </ul> <h2><strong>Contact</strong></h2> <p>Stel uw vraag via het <a class=\"newwindow\" href=\"/Ik-heb-een-vraag\">vragenformulier</a> of neem telefonisch contact op via 026 359 99 99.</p>",
+    "type": {
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "id": "http://standaarden.overheid.nl/owms/terms/natuurbeheer_provinciale_subsidie"
+    },
+    "language": {
+      "@type": "http://purl.org/dc/terms/LinguisticSystem",
+      "id": "http://publications.europa.eu/resource/authority/language/NLD"
+    },
+    "spatial": {
+      "@type": "http://purl.org/dc/terms/Location",
+      "id": "http://standaarden.overheid.nl/owms/terms/Gelderland"
+    },
+    "hasCompetentAuthority": {
+      "@type": "http://data.europa.eu/m8g/PublicOrganisation",
+      "id": "http://standaarden.overheid.nl/owms/terms/Gelderland",
+      "spatial": {
+        "@type": "http://purl.org/dc/terms/Location",
+        "id": "http://standaarden.overheid.nl/owms/terms/Gelderland"
+      }
+    }
+  }, {
+    "@type": "http://purl.org/vocab/cpsv#PublicService",
+    "id": "https://www.gelderland.nl/?id=4349",
+    "identifier": "https://www.gelderland.nl/?id=4349",
+    "title": "Grond in bezit krijgen voor het Gelders Natuurnetwerk",
+    "description": "<p><strong>Wilt u een terrein in bezit krijgen om daar een natuurgebied van te maken? Dan kunt u subsidie aanvragen.</strong></p> <h2><strong>Subsidiemogelijkheden</strong></h2> <p>U kunt subsidie aanvragen voor:</p> <ul> <li>het in bezit krijgen van een natuurambitieterrein</li> <li>het beëindigen van een pachtovereenkomst van een natuurambitieterrein</li> <li>het in bezit krijgen van een natuurambitieterrein in combinatie met de daling van de waarde van de gebouwen op dat terrein, door de verandering van de functie van natuurambitieterrein naar natuur.</li> </ul> <p>Een natuurambitieterrein is een terrein dat op de <a class=\"newwindow\" href=\"/Kaartenencijfers/kaart-natuurbeheerplan.html\">ambitiekaart Gelders Natuurnetwerk </a>voorkomt. Het staat aangegeven als N00.01 en onder ‘indicatieve verhouding beheertypen’ staat welke beheertypen op deze grond gelden na functieverandering van landbouw naar natuur.</p> <h2><strong>Voorwaarden</strong></h2> <p>Om voor subsidie in aanmerking te komen, moet u voldoen aan een aantal voorwaarden. Hiervoor verwijzen wij naar de <a class=\"newwindow\" href=\"/Regels-Ruimte-voor-Gelderland-2016\">Regels Ruimte voor Gelderland 2016</a>, hoofdstuk 4.4 Grondverwerving ten behoeve van het Gelders NatuurNetwerk.</p> <p>Daarnaast geldt als voorwaarde dat de grond gelegen is binnen het Gelders Natuurnetwerk en is aangemerkt als N00.01 op de ambitiekaart uit het Natuurbeheerplan. De subsidie is gelijk aan de waardevermindering (met een maximum van 85%) en wordt bepaald aan de hand van taxatiewaarden van de grond vóór functieverandering (landbouwgrond) en ná functieverandering (natuurgrond).</p> <h2><strong>Subsidie aanvragen</strong></h2> <p>U kunt <a class=\"newwindow\" href=\"/SUM-grondverwerving-gnn\">uw subsidie aanvragen via het Subsidieportaal</a>. Na het inloggen komt u terecht bij het aanvraagformulier ‘Grondverwerving GNN’.</p> <p>Voor deze subsidie is een bepaald bedrag beschikbaar gesteld. U kunt subsidie aanvragen totdat dit bedrag besteed is.</p> <h2><strong>Relevante informatie en tips</strong></h2> <p>Lees of bekijk ook:</p> <ul> <li>de <a class=\"newwindow\" href=\"/Kaartenencijfers/kaart-natuurbeheerplan.html\">ambitiekaart Gelders Natuurnetwerk</a></li> <li>de <a class=\"newwindow\" href=\"/Regels-Ruimte-voor-Gelderland-2016\">Regels Ruimte voor Gelderland 2016</a>, hoofdstuk 1 (algemene bepalingen)</li> <li>de <a class=\"newwindow\" href=\"/Algemene-subsidieverordening-Gelderland-2016\">algemene subsidieverordening Gelderland 2016</a></li> <li>de <a href=\"/Handleiding-indienen-subsidieaanvraag-(Sigma)\">handleiding indienen subsidieaanvraag</a> (PDF 1,2 MB).</li> </ul> <h2><strong>Contact</strong></h2> <p>Stel uw vraag via het <a class=\"newwindow\" href=\"/Ik-heb-een-vraag\">vragenformulier</a> of neem telefonisch contact op via 026 359 99 99.</p>",
+    "type": {
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "id": "http://standaarden.overheid.nl/owms/terms/natuurbeheer_provinciale_subsidie"
+    },
+    "language": {
+      "@type": "http://purl.org/dc/terms/LinguisticSystem",
+      "id": "http://publications.europa.eu/resource/authority/language/NLD"
+    },
+    "spatial": {
+      "@type": "http://purl.org/dc/terms/Location",
+      "id": "http://standaarden.overheid.nl/owms/terms/Gelderland"
+    },
+    "hasCompetentAuthority": {
+      "@type": "http://data.europa.eu/m8g/PublicOrganisation",
+      "id": "http://standaarden.overheid.nl/owms/terms/Gelderland",
+      "spatial": {
+        "@type": "http://purl.org/dc/terms/Location",
+        "id": "http://standaarden.overheid.nl/owms/terms/Gelderland"
+      }
+    }
+  }, {
+    "@type": "http://purl.org/vocab/cpsv#PublicService",
+    "id": "https://www.gelderland.nl/?id=4355",
+    "identifier": "https://www.gelderland.nl/?id=4355",
+    "title": "Landschap en biodiversiteit",
+    "description": "<p><strong>Wilt u bijdragen aan een gevarieerder, aantrekkelijker landschap waar meer te beleven valt? Dan kunt u subsidie aanvragen.</strong></p> <h2><strong>Subsidiemogelijkheden</strong></h2> <p>U kunt subsidie aanvragen voor:</p> <ul> <li>De aanleg, het herstel of het uitvoeren van achterstallig onderhoud van in de regeling opgenomen landschapselementen buiten het Gelders Natuurnetwerk (GNN)</li> <li>Maatregelen ter verbetering van het leefgebied van niet prioritaire soorten buiten het GNN</li> <li>Maatregelen om beleving van het landschap te vergroten, zoals kleinschalige recreatieve voorzieningen, onverharde paden en eenvoudige houten loopbruggetjes</li> <li>Maatregelen om betrokkenheid van burgers bij het landschap te vergroten, zoals educatie, voorlichting aan vrijwilligers</li> <li>Investeringen in het behoud van kleine vanaf de openbare weg zichtbare cultuurhistorische objecten</li> <li>Opstellen van een biodiversiteitsplan door gemeenten. Het plan bevat maatregelen voor actieve bescherming van soorten, natuurinclusief bouwen, ecologisch beheer van bermen en voor het betrekken van inwoners bij vergroten van biodiversiteit.</li> </ul> <h2><strong>Voorwaarden</strong></h2> <p>Om voor subsidie in aanmerking te komen, moet u voldoen aan een aantal voorwaarden. Hiervoor verwijzen wij naar de <a class=\"newwindow\" href=\"/Regels-Ruimte-voor-Gelderland-2016\">Regels Ruimte voor Gelderland 2016</a>, paragraaf 4.2 Landschap en biodiversiteit.</p> <h2><strong>Subsidie aanvragen</strong></h2> <p>Let op: deze subsidie is voornamelijk bedoeld voor gemeenten, bos- en landgoedeigenaren, en stichtingen met als statutaire doelstelling educatieve natuur- en landschapsvoorlichting. Particulieren kunnen informeren bij de gemeente naar subsidiemogelijkheden.</p> <p>Let op: voor het aanvragen van deze subsidie is een nieuw aanvraagformulier gemaakt. Met ingang van 1 mei 2019 kan deze subsidie alleen nog worden aangevraagd door middel van dit nieuwe aanvraagformulier. Voor 1 mei kunt u het nieuwe aanvraagformulier al wel invullen, maar nog niet indienen. U vindt het nieuwe aanvraagformulier in het <a class=\"newwindow\" href=\"https://formulierengld.gelderland.nl:443/EFormulieren/formulier/nl-NL/evAllScenarios/scLandschap_en_biodiversiteit_378.aspx?aanvraagtitelId=378\">Subsidieportaal</a>. Na het inloggen komt u terecht bij het aanvraagformulier ‘Landschap en biodiversiteit’. Wij raden u aan om uw subsidieaanvraag via het nieuwe aanvraagformulier in te dienen.</p> <p>In de <a href=\"/Checklist-verplichte-bijlagen-Landschap-biodiversiteit-v10\">checklist verplichte bijlagen  (PDF 100 kB)</a> kunt u lezen welke informatie als bijlage bij uw aanvraag meegestuurd dient te worden.</p> <p>Voor deze subsidie is een bepaald bedrag beschikbaar gesteld. U kunt subsidie aanvragen totdat dit bedrag besteed is.</p> <h2><strong>Relevante informatie en tips</strong></h2> <p>Lees ook:</p> <ul> <li>de <a class=\"newwindow\" href=\"/Regels-Ruimte-voor-Gelderland-2016\">Regels Ruimte voor Gelderland 2016</a>, hoofdstuk 1 (algemene bepalingen)</li> <li>de <a class=\"newwindow\" href=\"/Algemene-subsidieverordening-Gelderland-2016\">algemene subsidieverordening Gelderland 2016</a></li> <li>de <a href=\"/Handleiding-indienen-subsidieaanvraag-(Sigma)\">handleiding indienen subsidieaanvraag</a> (PDF 1,2 MB)</li> <li><a href=\"/Rekenblad-SUB-Landschap-en-biodiversiteit\">Sjabloon Begroting van kosten en financiering met onderbouwing (Excel 25 kB)</a> (behorende bij het nieuwe aanvraagformulier).</li> </ul> <h2><strong>Contact</strong></h2> <p>Stel uw vraag via het <a class=\"newwindow\" href=\"/Ik-heb-een-vraag\">vragenformulier</a> of neem telefonisch contact op via 026 359 99 99.</p>",
+    "type": {
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "id": "http://standaarden.overheid.nl/owms/terms/natuurbeheer_provinciale_subsidie"
+    },
+    "language": {
+      "@type": "http://purl.org/dc/terms/LinguisticSystem",
+      "id": "http://publications.europa.eu/resource/authority/language/NLD"
+    },
+    "spatial": {
+      "@type": "http://purl.org/dc/terms/Location",
+      "id": "http://standaarden.overheid.nl/owms/terms/Gelderland"
+    },
+    "hasCompetentAuthority": {
+      "@type": "http://data.europa.eu/m8g/PublicOrganisation",
+      "id": "http://standaarden.overheid.nl/owms/terms/Gelderland",
+      "spatial": {
+        "@type": "http://purl.org/dc/terms/Location",
+        "id": "http://standaarden.overheid.nl/owms/terms/Gelderland"
+      }
+    }
+  }, {
+    "@type": "http://purl.org/vocab/cpsv#PublicService",
+    "id": "https://www.gelderland.nl/?id=4356",
+    "identifier": "https://www.gelderland.nl/?id=4356",
+    "title": "Verplaatsing landbouwbedrijfsgebouwen voor Gelders Natuurnetwerk",
+    "description": "<p><strong>Wilt u uw landbouwbedrijfsgebouw verplaatsen om ruimte te maken voor natuur in een Natura 2000-gebied of het Gelders Natuurnetwerk? Dan kunt u subsidie aanvragen.</strong></p> <h2><strong>Subsidiemogelijkheden</strong></h2> <p>U kunt subsidie aanvragen voor het verplaatsen van een landbouwbedrijfsgebouw.</p> <h2><strong>Voorwaarden</strong></h2> <p>Om voor subsidie in aanmerking te komen, moet u voldoen aan een aantal voorwaarden. Hiervoor verwijzen wij naar de <a class=\"newwindow\" href=\"/Regels-Ruimte-voor-Gelderland-2016\">Regels Ruimte voor Gelderland 2016</a>, hoofdstuk 4.5 Verplaatsing landbouwbedrijfsgebouwen ten behoeve van het Gelders Natuurnetwerk.</p> <p>Let op:<br />U ontvangt alleen subsidie als deze niet in strijd is met hoofdstuk I en artikel 16 van de <a href=\"/EU-verordening-algemene-groepsvrijstelling\">Landbouw groepsvrijstellingsverordening (PDF 1,8 MB)</a>. Dit wijkt af van artikel 1.3.3, lid 1 van de Regels Ruimte voor Gelderland 2016.</p> <h2><strong>Subsidie aanvragen</strong></h2> <p>U kunt <a class=\"newwindow\" href=\"/SUM-Verplaatsing-landbouwbedrijfsgebouwen-voor-Gelders-Natuurnetwerk\">uw subsidie aanvragen via het Subsidieportaal</a>. Na het inloggen komt u terecht bij het aanvraagformulier ‘Verplaatsing landbouwbedrijfsgebouwen t.b.v. het Gelders NatuurNetwerk’.</p> <p>Voor deze subsidie is een bepaald bedrag beschikbaar gesteld. U kunt subsidie aanvragen totdat dit bedrag besteed is.</p> <h2><strong>Relevante informatie en tips</strong></h2> <p>Lees ook:</p> <ul> <li><a href=\"/EU-verordening-algemene-groepsvrijstelling\">Landbouw groepsvrijstellingsverordening (PDF 1,8 MB)</a>, hoofdstuk 1 en artikel 16</li> <li>de <a class=\"newwindow\" href=\"/Regels-Ruimte-voor-Gelderland-2016\">Regels Ruimte voor Gelderland 2016</a>, hoofdstuk 1 (algemene bepalingen)</li> <li>de <a class=\"newwindow\" href=\"/Algemene-subsidieverordening-Gelderland-2016\">algemene subsidieverordening Gelderland 2016</a></li> <li>de <a href=\"/Handleiding-indienen-subsidieaanvraag-(Sigma)\">handleiding indienen subsidieaanvraag (PDF 1,2 MB)</a>.</li> </ul> <h2><strong>Contact</strong></h2> <p>Stel uw vraag via het <a class=\"newwindow\" href=\"/Ik-heb-een-vraag\">vragenformulier</a> of neem telefonisch contact op via 026 359 99 99.</p>",
+    "type": {
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "id": "http://standaarden.overheid.nl/owms/terms/natuurbeheer_provinciale_subsidie"
+    },
+    "language": {
+      "@type": "http://purl.org/dc/terms/LinguisticSystem",
+      "id": "http://publications.europa.eu/resource/authority/language/NLD"
+    },
+    "spatial": {
+      "@type": "http://purl.org/dc/terms/Location",
+      "id": "http://standaarden.overheid.nl/owms/terms/Gelderland"
+    },
+    "hasCompetentAuthority": {
+      "@type": "http://data.europa.eu/m8g/PublicOrganisation",
+      "id": "http://standaarden.overheid.nl/owms/terms/Gelderland",
+      "spatial": {
+        "@type": "http://purl.org/dc/terms/Location",
+        "id": "http://standaarden.overheid.nl/owms/terms/Gelderland"
+      }
+    }
+  }, {
+    "@type": "http://purl.org/vocab/cpsv#PublicService",
+    "id": "https://www.gelderland.nl/?id=4357",
+    "identifier": "https://www.gelderland.nl/?id=4357",
+    "title": "Faunavoorzieningen",
+    "description": "<p><strong>Bij een faunavoorziening kunnen dieren veiliger wegen oversteken. Wilt u een faunavoorziening aanleggen? Dan kunt u subsidie aanvragen.</strong></p> <h2><strong>Voorwaarden</strong></h2> <p>Om voor subsidie in aanmerking te komen, moet u voldoen aan een aantal voorwaarden. Hiervoor verwijzen wij naar de <a class=\"newwindow\" href=\"/Regels-Ruimte-voor-Gelderland-2016\">Regels Ruimte voor Gelderland 2016</a>, hoofdstuk 4.3 Faunavoorzieningen.</p> <p>Let op:  de faunavoorziening moet gericht zijn op diersoorten die zijn aangewezen in de <a href=\"/Beleidsnota-actieve-soortenbescherming-gelderland\">Beleidsnota actieve soortenbescherming, bijlage 3 (PDF 2 MB)</a></p> <h2><strong>Subsidie aanvragen</strong></h2> <p>U kunt <a class=\"newwindow\" href=\"/SUM-faunavoorzieningen\">uw subsidie aanvragen via het Subsidieportaal</a>. Na het inloggen komt u terecht bij het aanvraagformulier ‘Faunavoorzieningen’.</p> <p>Voor deze subsidie is een bepaald bedrag beschikbaar gesteld. U kunt subsidie aanvragen totdat dit bedrag besteed is.</p> <h2><strong>Relevante informatie en tips</strong></h2> <p>Lees of bekijk ook:</p> <ul> <li>de kaart <a class=\"newwindow\" href=\"/Kaartenencijfers/kernkwaliteiten.html\">Kernkwaliteiten Gelders NatuurNetwerk</a></li> <li>de <a class=\"newwindow\" href=\"/Regels-Ruimte-voor-Gelderland-2016\">Regels Ruimte voor Gelderland 2016</a>, hoofdstuk 1 (algemene bepalingen)</li> <li>de <a class=\"newwindow\" href=\"/Algemene-subsidieverordening-Gelderland-2016\">algemene subsidieverordening Gelderland 2016</a></li> <li>de <a href=\"/Handleiding-indienen-subsidieaanvraag-(Sigma)\">handleiding indienen subsidieaanvraag (PDF 1,2 MB)</a>.</li> </ul> <h2>Contact</h2> <p>Stel uw vraag via het <a class=\"newwindow\" href=\"/Ik-heb-een-vraag\">vragenformulier</a> of neem telefonisch contact op via 026 359 99 99.</p>",
+    "type": {
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "id": "http://standaarden.overheid.nl/owms/terms/natuurbeheer_provinciale_subsidie"
+    },
+    "language": {
+      "@type": "http://purl.org/dc/terms/LinguisticSystem",
+      "id": "http://publications.europa.eu/resource/authority/language/NLD"
+    },
+    "spatial": {
+      "@type": "http://purl.org/dc/terms/Location",
+      "id": "http://standaarden.overheid.nl/owms/terms/Gelderland"
+    },
+    "hasCompetentAuthority": {
+      "@type": "http://data.europa.eu/m8g/PublicOrganisation",
+      "id": "http://standaarden.overheid.nl/owms/terms/Gelderland",
+      "spatial": {
+        "@type": "http://purl.org/dc/terms/Location",
+        "id": "http://standaarden.overheid.nl/owms/terms/Gelderland"
+      }
+    }
+  }, {
+    "@type": "http://purl.org/vocab/cpsv#PublicService",
+    "id": "https://www.gelderland.nl/?id=4358",
+    "identifier": "https://www.gelderland.nl/?id=4358",
+    "title": "Behoud van prioritaire soorten",
+    "description": "<p><strong>LET OP!  Inmiddels hebben wij zoveel aanvragen ontvangen dat het beschikbare bedrag bijna is besteed door de aanvragen die op dit moment bij ons in behandeling zijn. Daardoor wordt  uw subsidieaanvraag mogelijk afgewezen omdat er geen middelen meer beschikbaar zijn. Eind juni 2019 wordt het subsidieplafond mogelijk opgehoogd, waardoor aanvragen vanaf dat moment weer voor subsidie in aanmerking kunnen komen.</strong></p> <p>In Gelderland zijn 75 planten- en diersoorten die dreigen te verdwijnen. Deze prioritaire soorten staan genoemd in de <a href=\"/Beleidsnota-actieve-soortenbescherming-gelderland\">Beleidsnota Actieve Soortenbescherming</a>, bijlage 3 (PDF 2 MB). Wilt u maatregelen nemen om deze planten en dieren te behouden? Dan kunt u subsidie aanvragen. </p> <h2><strong>Subsidiemogelijkheden</strong></h2> <p>U kunt subsidie aanvragen voor:</p> <ul> <li>kweek in combinatie met introductie van een prioritaire soort in een leefgebied</li> <li>introductie van een prioritaire soort in een leefgebied</li> <li>handmatig bestuiven van een prioritaire plantensoort in een leefgebied</li> <li>onderzoek dat zich richt op het in kaart brengen van het voorkomen van een prioritaire soort in een leefgebied</li> <li>onderzoek dat zich richt op het kijken hoe effectief een maatregel is voor het behoud van een prioritaire soort </li> <li>onderzoek dat zich richt op het bepalen van maatregelen die nodig zijn voor het behoud van een prioritaire soort in een leefgebied</li> <li>maatregelen die het leefgebied van een prioritaire soort behouden of versterken.</li> </ul> <h2><strong>Voorwaarden</strong></h2> <p>Om voor subsidie in aanmerking te komen, moet u voldoen aan een aantal voorwaarden. Hiervoor verwijzen wij naar de <a class=\"newwindow\" href=\"/Regels-Ruimte-voor-Gelderland-2016\">Regels Ruimte voor Gelderland 2016</a>, hoofdstuk 4.6 (Behoud van prioritaire soorten).</p> <h2><strong>Subsidie aanvragen</strong></h2> <p><strong>LET OP!  Inmiddels hebben wij zoveel aanvragen ontvangen dat het beschikbare bedrag bijna is besteed door de aanvragen die op dit moment bij ons in behandeling zijn. Daardoor wordt  uw subsidieaanvraag mogelijk afgewezen omdat er geen middelen meer beschikbaar zijn. Eind juni 2019 wordt het subsidieplafond mogelijk opgehoogd, waardoor aanvragen vanaf dat moment weer voor subsidie in aanmerking kunnen komen.</strong></p> <p>U kunt <a class=\"newwindow\" href=\"/SUM-Prioritaire-soorten\">uw subsidie aanvragen via het Subsidieportaal</a>. Na het inloggen komt u terecht bij het aanvraagformulier ‘Behoud prioritaire soorten’.</p> <p>Voor deze subsidie is een bepaald bedrag beschikbaar gesteld. U kunt subsidie aanvragen totdat dit bedrag besteed is.</p> <h2><strong>Relevante informatie en tips</strong></h2> <p>Lees ook:</p> <ul> <li>de <a class=\"newwindow\" href=\"/Regels-Ruimte-voor-Gelderland-2016\">Regels Ruimte voor Gelderland 2016</a>, hoofdstuk 1 (algemene bepalingen)</li> <li>de <a class=\"newwindow\" href=\"/Algemene-subsidieverordening-Gelderland-2016\">algemene subsidieverordening Gelderland 2016</a></li> <li>de <a href=\"/Handleiding-indienen-subsidieaanvraag-(Sigma)\">handleiding indienen subsidieaanvraag (PDF 1,2 MB)</a>.</li> </ul> <h2><strong>Contact</strong></h2> <p>Stel uw vraag via het <a class=\"newwindow\" href=\"/Ik-heb-een-vraag\">vragenformulier</a> of neem telefonisch contact op via 026 359 99 99.</p>",
+    "type": {
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "id": "http://standaarden.overheid.nl/owms/terms/natuurbeheer_provinciale_subsidie"
+    },
+    "language": {
+      "@type": "http://purl.org/dc/terms/LinguisticSystem",
+      "id": "http://publications.europa.eu/resource/authority/language/NLD"
+    },
+    "spatial": {
+      "@type": "http://purl.org/dc/terms/Location",
+      "id": "http://standaarden.overheid.nl/owms/terms/Gelderland"
+    },
+    "hasCompetentAuthority": {
+      "@type": "http://data.europa.eu/m8g/PublicOrganisation",
+      "id": "http://standaarden.overheid.nl/owms/terms/Gelderland",
+      "spatial": {
+        "@type": "http://purl.org/dc/terms/Location",
+        "id": "http://standaarden.overheid.nl/owms/terms/Gelderland"
+      }
+    }
+  }, {
+    "@type": "http://purl.org/vocab/cpsv#PublicService",
+    "id": "https://www.gelderland.nl/?id=4364",
+    "identifier": "https://www.gelderland.nl/?id=4364",
+    "title": "Natuurbescherming: jacht en faunabeheer, ontheffing",
+    "description": "<p><strong>De Wet natuurbescherming beschermt diersoorten en planten. De dieren die onder deze wet vallen, mag u niet zomaar doden. Heeft u schade aan gewassen of is de volksgezondheid of de openbare veiligheid in gevaar door deze dieren? Dan kunt u een ontheffing bij ons aanvragen.</strong></p> <h2><strong>Voorwaarden</strong></h2> <p>De faunabeheereenheid, een wildbeheereenheid, gemeente, terreinbeheerder of een grondgebruiker kunnen een ontheffing aanvragen.</p> <p>U ontvangt een ontheffing als u voldoet aan deze voorwaarden:</p> <ul> <li>de activiteit is in het belang van de volksgezondheid, de openbare veiligheid en de veiligheid van het luchtverkeer</li> <li>het voorkomt schade aan gewassen, vee, bossen, bedrijfsmatige visserij en wateren, planten en diersoorten</li> <li>de activiteit is volgens de wet noodzakelijk</li> <li>Er dient onderbouwd te worden dat er geen alternatieven zijn. Er dienen andere eerst andere (preventieve) maatregelen te zijn genomen voordat een ontheffing kan worden verleend.</li> </ul> <p>Wij geven de ontheffing bij voorkeur aan de faunabeheereenheid met een door de provincie goed te keuren <a class=\"newwindow\" href=\"/Faunabeheerplan\">faunabeheerplan</a>. Anderen komen hiervoor in aanmerking als aan de volgende voorwaarden is voldaan:</p> <ul> <li>er is geen faunabeheerplan nodig</li> <li>tussenkomst van een faunabeheereenheid is niet nodig</li> <li>het gebied valt niet onder de zorg van een faunabeheereenheid.</li> </ul> <p>Ga dus eerst na of er al een ontheffing is verleend aan de faunabeheereenheid en neem voor overlast binnen de bebouwde kom altijd eerst contact op met uw gemeente.</p> <h2><strong>Toevoegen</strong></h2> <p>Lever de volgende informatie aan:</p> <ul> <li>topografische kaart met daarop de schadepercelen aangegeven</li> <li>toestemmingsverklaring van de grondgebruiker (tenzij de grondgebruiker zelf de aanvraag indient)</li> <li>historische schadegegevens met eventueel een taxatierapport opgesteld door het Faunafonds</li> <li>instemmingsverklaring van de gemeente, bij een aanvraag binnen de bebouwde kom en in het kader van de openbare veiligheid</li> <li>recent schadebestrijdingsplan, als u schade wilt bestrijden met kastvallen of vangkooien, inclusief een topografische kaart met daarop aangegeven waar u de kooi(en) wilt plaatsen</li> <li>het zaaknummer van een aanvraag, als u eerder een ontheffing heeft gekregen.</li> </ul> <h2><strong>Ontheffing aanvragen</strong></h2> <p>U kunt uw ontheffing aanvragen met het <a href=\"/Aanvraagformulier-Wet-natuurbescherming-Faunabeheer\">aanvraagformulier (PDF 2 MB)</a>.</p> <p>Stuur het volledig ingevulde en ondertekende formulier en de benodigde documenten op naar:</p> <p><a href=\"mailto:post@gelderland.nl\">post@gelderland.nl</a></p> <p>of naar:</p> <p>Provincie Gelderland<br />Postbus 9090<br />6800 GX Arnhem</p> <h2><strong>Tijdpad en kosten</strong></h2> <p>Wij hebben maximaal 20 weken nodig om uw vergunning in orde te maken, gerekend vanaf het moment dat u uw aanvraag heeft ingestuurd. Als u niet alle gevraagde informatie bij uw aanvraag meestuurt, duurt de afhandeling langer.</p> <p>Als u deze ontheffing aanvraagt, dan betaalt u de provincie daarvoor zogenoemde leges. De hoogte van de leges vindt u in de <a class=\"newwindow\" href=\"/Tarieventabel-2018\">tarieventabel van de provincie Gelderland</a>. De tarieven voor 2019 zijn niet gewijzigd.</p> <h2><strong>Afhandeling ontheffing</strong></h2> <p>De procedure verloopt  via de volgende stappen:</p> <ul> <li>u ontvangt een ontvangstbevestiging met een zaaknummer waaronder uw melding geregistreerd is</li> <li>wij beoordelen uw aanvraag inhoudelijk en toetsen deze aan de wettelijke eisen </li> <li>als uw aanvraag niet compleet is, krijgt u daarover schriftelijk bericht. De extra tijd die u krijgt om uw aanvraag volledig te maken, tellen we bij de behandelingsduur op</li> <li>we publiceren het ontwerpbesluit. Belanghebbenden kunnen binnen 6 weken zienswijzen indienen tegen het besluit over de aanvraag. We maken het besluit definitief en betrekken daarbij eventueel ingediende zienswijzen</li> <li>wij publiceren het definitieve besluit. Belanghebbenden kunnen binnen 6 weken beroep aantekenen</li> <li>het is mogelijk dat tijdens de activiteit toezicht door ons plaatsvindt.</li> </ul> <h2><strong>Links en tips</strong></h2> <ul> <li><a class=\"newwindow\" href=\"/Tekst-Wet-natuurbescherming-overheidnl\">Wet natuurbescherming</a></li> <li><a href=\"/Besluit-tijdstip-inwerkingtreding-Wet-natuurbescherming-en-Besluit-natuurbescherming\">Besluit inwerkingtreding Wet natuurbescherming</a></li> <li><a class=\"newwindow\" href=\"http://www.ruimtelijkeplannen.nl/web-roo/transform/NL.IMRO.9925.PVOVa2A-vst1/pt_NL.IMRO.9925.PVOVa2A-vst1.xml#NL.IMRO.PT.s09e4f643-7fa8-4d94-88a9-daf5012650d7\">Natuurparagraaf Omgevingsverordening Gelderland</a></li> <li><a href=\"/Vrijstellingen-soorten-inzake-schade-en-overlast\">Vrijstellingen soorten inzake schade en overlast (PDF 132 kB).</a></li> <li><a href=\"/Dieren-beschermen-en-beheren\">Gelderland.nl: Dieren beschermen en beheren</a></li> </ul> <h2><strong>Contact</strong></h2> <p>Stel uw vraag via het <a class=\"newwindow\" href=\"/Ik-heb-een-vraag\">vragenformulier</a> of neem telefonisch contact op via 026 359 99 99.</p>",
+    "type": {
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "id": "http://standaarden.overheid.nl/owms/terms/faunabeheerplan"
+    },
+    "language": {
+      "@type": "http://purl.org/dc/terms/LinguisticSystem",
+      "id": "http://publications.europa.eu/resource/authority/language/NLD"
+    },
+    "spatial": {
+      "@type": "http://purl.org/dc/terms/Location",
+      "id": "http://standaarden.overheid.nl/owms/terms/Gelderland"
+    },
+    "hasCompetentAuthority": {
+      "@type": "http://data.europa.eu/m8g/PublicOrganisation",
+      "id": "http://standaarden.overheid.nl/owms/terms/Gelderland",
+      "spatial": {
+        "@type": "http://purl.org/dc/terms/Location",
+        "id": "http://standaarden.overheid.nl/owms/terms/Gelderland"
+      }
+    }
+  }, {
+    "@type": "http://purl.org/vocab/cpsv#PublicService",
+    "id": "https://www.gelderland.nl/?id=4366",
+    "identifier": "https://www.gelderland.nl/?id=4366",
+    "title": "Tijdelijk en uitzonderlijk gebruik (TUG) luchtvaart, ontheffing",
+    "description": "<p><strong>Wilt u met een luchtvaartuig landen op of opstijgen vanaf een terrein dat geen luchthaven is? Hiervoor heeft u een TUG-ontheffing nodig van de provincie (TUG-ontheffing staat voor Tijdelijk en uitzonderlijk gebruik). Dit is geregeld in de <a class=\"newwindow\" href=\"/Wet-Luchtvaart-(TUG)\">Wet luchtvaart</a>.</strong></p> <p>Wij verlenen 3 soorten ontheffingen:</p> <ul> <li>Een locatie-gebonden ontheffing voor meerdere starts en landingen op 1 vaste locatie. Dit wordt in de praktijk vooral afgegeven aan helikopterbedrijven.  Deze ontheffing wordt eenmalige verleend voor maximaal 3 jaar. Daarna moet een Luchthavenregeling of luchthavenbesluit worden aangevraagd. Het is, in verband met de proceduretijd, van belang dat u ruim van tevoren (1 jaar) uw aanvraag indient.</li> <li>Een locatie-gebonden ontheffing incidenteel, bijvoorbeeld bij rondvluchten tijdens evenementen met helikopters. Deze ontheffing geldt voor alle onder  \"Voorwaarden\" (1e punt) genoemde luchtvaartuigen. Het is bestemd voor evenementen, projecten of voor eenmalige vluchtdagen (bijvoorbeeld rondvluchten), waarvan de start- en landingslocatie en de vliegdata bekend zijn. Omdat er in dit geval sprake kan zijn van aanzienlijke aantallen vluchten en daarmee gepaard gaande geluidhinder is een goede motivering en onderbouwing van het gekozen aantal van belang.</li> <li>Een generieke ontheffing voor maximaal 3 jaar waarbij verlenging om de 3 jaar mogelijk is. U krijgt toestemming om gedurende 12 dagen per jaar maximaal 2 starts en 2 landingen uit te voeren. De ontheffing geldt voor het gehele grondgebied van de provincie Gelderland. Er dient minimaal 1000 meter afstand tussen de gekozen terreinen te zitten.</li> </ul> <h2>Waar gaat het niet over?</h2> <ul> <li>Voor helikoptervluchten met een groot maatschappelijk belang, zoals traumahelikopters en helikoptervluchten voor de uitoefening van politietaken, brandpreventie en dergelijke, is geen TUG-ontheffing vereist om een bepaald terrein te gebruiken</li> <li>Voor <a href=\"/Staatscourant-TUG-schermzweeftoestellen\">ongemotoriseerde luchtvaartuigen (PDF 405 kB)</a> geldt een landelijke vrijstellingsregeling. Het gaat hier om vrije ballonnen, zeilvliegtuigen en schermzweeftoestellen. </li> <li><a href=\"/Staatscourant-TUG-Paramotors-vrijstelling\">Gemotoriseerde schermvliegtuigen (paramotors) (PDF 2,8 MB)</a> zijn vrijgesteld van de verplichting om een luchthavenregeling (LHR) te hebben. Het gaat hier om de zogenaamde voetstarters (rugzakmotor). De gebruiker moet wel beschikken over een verklaring van geen bezwaar (vvgb) van de burgemeester van de gemeente waarin de activiteiten plaatsvinden. De trikes (kar met wielen) zijn niet vrijgesteld. Vliegt men 12 dagen of minder per jaar dan moet een TUG ontheffing aangevraagd worden.</li> <li>Voor <a href=\"/Staatscourant-TUG-Drones\">onbemande luchtvaartuigen (drones) (PDF 2,1 MB)</a> met een massa van ten hoogste 25 kg geldt ook een vrijstelling van de verplichting om een TUG-ontheffing aan te vragen. Een TUG-ontheffing is wél nodig als drone méér dan 25 kilo weegt maar niet meer dan 150 kilo. Meer informatie over drones vindt u op de <a class=\"newwindow\" href=\"/Website-rijksoverheid-over-drones\">website van de Rijksoverheid</a>. </li> </ul> <h2>Voorwaarden</h2> <p>U ontvangt een ontheffing als u voldoet aan de volgende vereisten:</p> <ul> <li>De luchtvaartuigen waarvoor u ontheffing kunt krijgen, zijn: helikopters,  gemotoriseeerde schermvliegtuigen, zweefvliegtuigen,  micro light aeroplanes (mla),  RPA’s waarvan de totale massa meer dan 25 kg maar niet meer dan 150 kg bedraagt, luchtvaartuigen die deelnemen aan een luchtvaartvertoning, watervliegtuigen, landbouwluchtvaartuigen, luchtschepen en RPA: (remotely piloted aircraft: een op afstand bestuurd luchtvaartuig)</li> <li>de locatie waar de start en/of landing plaatsvindt ligt buiten de beschermde Gelderse natuurgebieden. De provincie verleent geen ontheffing in Natura 2000-gebieden, het Gelders Natuurnetwerk en de Groene Ontwikkelingszone en ook niet in de bufferzone van 300 meter daaromheen. De ligging van deze gebieden is aangegeven op deze <a class=\"newwindow\" href=\"/Kaartenencijfers/Luchtvaart-tijdelijk-en-uitzonderlijk-gebruik.html\">kaart</a>. Op deze kaart zoomt u in op het terrein waarvoor u ontheffing aanvraagt. Wanneer u al een generieke TUG-ontheffing heeft, toetst u de locaties voordat u een vlucht uitvoert</li> <li>De locatie waar de start en/of landing plaatsvindt, ligt niet binnen een straal van 1000 meter van een andere vergunde start en/of landingslocatie. Met behulp van de <a class=\"newwindow\" href=\"/Kaartenencijfers/Luchtvaart-tijdelijk-en-uitzonderlijk-gebruik.html\">kaartviewer</a> kunt u dit controleren</li> <li>de openbare orde en veiligheid wordt niet geschaad, naar oordeel van de burgemeester van de gemeente waar de start-/landingslocatie is gelegen.</li> <li>plattegrond locatie terrein(en) met de specifieke locatie(s) van landen en opstijgen duidelijk ingetekend. Maak hiervoor gebruik van de <a class=\"newwindow\" href=\"/Kaartenencijfers/Luchtvaart-tijdelijk-en-uitzonderlijk-gebruik.html\">kaartviewer</a> en voeg het *txt-bestand bij</li> </ul> <h2>Ontheffing aanvragen</h2> <p>Gebruik bij het aanvragen de meest actuele  versie van het <a class=\"newwindow\" href=\"/TUG-Aanvraagformulier\">aanvraagformulier</a>. Vul het formulier volledig in. Als uw aanvraag niet compleet is, krijgt u daarover schriftelijk bericht.</p> <p>U of iemand die u hiervoor heeft gemachtigd ondertekent de aanvraag vervolgens. Indien een gemachtigde ondertekent, stuurt u de machtiging als bijlage mee. </p> <p>U dient ook een schriftelijk bewijs van akkoord van de gemeente aan te vragen. U kunt dit zelf bij de gemeente regelen of door de provincie laten doen. In het eerste geval zijn de <a class=\"newwindow\" href=\"/Tarieventabel-2018\">legeskosten</a> lager.</p> <p>Als u een ontheffing heeft ontvangen moet u de start en/of landing melden bij de minister, de burgemeester en de provincie. Dit doet u tussen 48 uur tot 24 uur vóór de start en/of landing. Bij de melding aan de provincie moet u gebruikmaken van het standaard meldingsformulier <a class=\"newwindow\" href=\"/24-uursmelding-luchtvaart\">24 uursmelding luchtvaart</a>. U dient (dit geldt niet voor locatiegebonden of locatiegebonden incidenteel) daarbij een plattegrond te sturen met daarop ingetekend de landings/opstijglocatie. Aan de hand van deze kaart kunt u tevens beoordelen in hoeverre de locatie is gelegen binnen 1000 meter van een andere locatie of beschermd natuurgebied.</p> <p>Stuur het volledig ingevulde en ondertekende formulier en de benodigde documenten naar:</p> <p><a href=\"mailto:post@gelderland.nl\">post@gelderland.nl</a></p> <p>of naar:</p> <p>Provincie Gelderland ter attentie van Afdeling VVHH / VV Postbus 9090 6800 GX Arnhem</p> <h2>Behandeling van de aanvraag</h2> <p>Na binnenkomst van de aanvraag ontvangt u geen ontvangstbevestiging. </p> <p>U kunt binnen zes weken <a href=\"/bezwaren\">bezwaar</a> maken tegen het besluit op uw aanvraag. Bent u het niet eens met de beslissing over uw bezwaar? Dan kunt U binnen 6 weken beroep aantekenen bij de rechtbank.</p> <p>Als de aanvraag volledig is verlenen wij binnen 4 weken de ontheffing. Als u de aanvraag niet volledig heeft ingevuld wordt de termijn opgeschort.</p> <h2>Kosten</h2> <p>Als u deze ontheffing aanvraagt, dan moet u de provincie daarvoor zogenoemde leges betalen. De hoogte van de leges vindt u in de <a class=\"newwindow\" href=\"/Tarieventabel-2018\">Tarieventabel provincie Gelderland 2018</a>. De tarieven voor 2019 zijn niet gewijzigd. De leges gelden ongeacht het al dan niet  verlenen van de TUG-ontheffing.</p> <h2>Links</h2> <ul> <li><a class=\"newwindow\" href=\"/Besluit-burgerluchthavens\">Besluit burgerluchthavens</a></li> <li><a class=\"newwindow\" href=\"/Regeling-veilig-gebruik-luchthavens-en-andere-terreinen\">Regeling veilig gebruik luchthavens en andere terreinen</a></li> <li><a class=\"newwindow\" href=\"/Regeling-op-afstand-bestuurde-luchtvaartuigen\">Regeling op afstand bestuurde luchtvaartuigen</a></li> <li><a class=\"newwindow\" href=\"/Regeling-modelvliegen\">Regeling modelvliegen</a></li> </ul> <h2>Contact</h2> <p>Stel uw vraag via het <a class=\"newwindow\" href=\"/Ik-heb-een-vraag\">vragenformulier</a> of neem telefonisch contact op via 026 359 99 99.</p>",
+    "type": null,
+    "language": {
+      "@type": "http://purl.org/dc/terms/LinguisticSystem",
+      "id": "http://publications.europa.eu/resource/authority/language/NLD"
+    },
+    "spatial": {
+      "@type": "http://purl.org/dc/terms/Location",
+      "id": "http://standaarden.overheid.nl/owms/terms/Gelderland"
+    },
+    "hasCompetentAuthority": {
+      "@type": "http://data.europa.eu/m8g/PublicOrganisation",
+      "id": "http://standaarden.overheid.nl/owms/terms/Gelderland",
+      "spatial": {
+        "@type": "http://purl.org/dc/terms/Location",
+        "id": "http://standaarden.overheid.nl/owms/terms/Gelderland"
+      }
+    }
+  }, {
+    "@type": "http://purl.org/vocab/cpsv#PublicService",
+    "id": "https://www.gelderland.nl/?id=11056",
+    "identifier": "https://www.gelderland.nl/?id=11056",
+    "title": "Energieloketten 2019",
+    "description": "<p><strong>Wilt u in 2019 als gemeente de bestaande energieloketten verder professionaliseren door het vergroten van de bekendheid, zichtbaarheid, bereikbaarheid en door een actieve marktbenadering? Dan kunt u subsidie aanvragen.</strong></p> <h2>Subsidiemogelijkheden</h2> <p>U kunt subsidie aanvragen voor de verdere professionalisering van bestaande energieloketten, vergroting van de bekendheid, zichtbaarheid en bereikbaarheid aan de hand van een actieve benadering.&#160; Daarbij benadert u verschillende doelgroepen om energiebesparende maatregelen aan hun woningen te treffen.</p> <h2>Voorwaarden</h2> <p>Om voor subsidie in aanmerking te komen, moet u voldoen aan een aantal voorwaarden. Voor de precieze voorwaarden verwijzen wij u naar de <a class=\"newwindow\" href=\"/Regels-Ruimte-voor-Gelderland-2016\">Regels Ruimte voor Gelderland 2016</a>, paragraaf 3.15 Energieloketten.</p> <p>Let op: u kunt alleen subsidie aanvragen als u een gemeente bent.</p> <h2>Subsidie aanvragen</h2> <p>U vraagt uw subsidie aan via het <a href=\"/SUM-energieloketten-2019\">Subsidieportaal</a>. Na het inloggen komt u terecht bij het aanvraagformulier 'Energieloketten 2019'.&#160;</p> <p>U kunt deze subsidie aanvragen tot en met 31 december 2019. Voor deze subsidie is een bepaald bedrag beschikbaar gesteld. U kunt subsidie aanvragen totdat dit bedrag is bereikt.</p> <h2><strong>Relevante informatie en tips</strong></h2> <p>Lees of bekijk ook:</p> <ul> <li>de <a class=\"newwindow\" href=\"/Regels-Ruimte-voor-Gelderland-2016\">Regels Ruimte voor Gelderland 2016</a>, hoofdstuk 1 (algemene bepalingen)</li> <li>de <a class=\"newwindow\" href=\"/Algemene-subsidieverordening-Gelderland-2016\">algemene subsidieverordening Gelderland 2016</a></li> <li>de <a href=\"/Handleiding-indienen-subsidieaanvraag-(Sigma)\">handleiding indienen subsidieaanvraag</a> (PDF 1,2 MB).</li> </ul> <h2>Contact</h2> <p>Stel uw vraag via het <a class=\"newwindow\" href=\"/Ik-heb-een-vraag\">vragenformulier</a> of neem telefonisch contact op via 026 359 99 99.</p>",
+    "type": {
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+      "id": "http://standaarden.overheid.nl/owms/terms/milieu_provinciale_subsidie"
+    },
+    "language": {
+      "@type": "http://purl.org/dc/terms/LinguisticSystem",
+      "id": "http://publications.europa.eu/resource/authority/language/NLD"
+    },
+    "spatial": {
+      "@type": "http://purl.org/dc/terms/Location",
+      "id": "http://standaarden.overheid.nl/owms/terms/Gelderland"
+    },
+    "hasCompetentAuthority": {
+      "@type": "http://data.europa.eu/m8g/PublicOrganisation",
+      "id": "http://standaarden.overheid.nl/owms/terms/Gelderland",
+      "spatial": {
+        "@type": "http://purl.org/dc/terms/Location",
+        "id": "http://standaarden.overheid.nl/owms/terms/Gelderland"
+      }
+    }
+  }]
+}
