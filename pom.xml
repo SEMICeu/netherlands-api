@@ -24,7 +24,7 @@
   	<maven.buildhelper.plugin>3.0.0</maven.buildhelper.plugin>
   	<maven.war.plugin>3.2.2</maven.war.plugin>
   	<maven.swaggercodegen.plugin>2.3.1</maven.swaggercodegen.plugin>
-  	<jena-version>3.7.0</jena-version>
+  	<jena-version>4.2.0</jena-version>
   	<maven.cargo.plugin>1.7.1</maven.cargo.plugin>
   </properties>
   
